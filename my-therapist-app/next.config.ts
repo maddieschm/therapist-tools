@@ -2,12 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  output: 'export',
   async redirects() {
     return [
       {
-        source: '/notegenerator', // This path will be redirected
-        destination: '/notegenerator/index.html', // This is where it will be sent
-        permanent: true, // Use `true` for a permanent 301 redirect, `false` for a temporary 302 redirect
+        source: '/notegenerator',
+        destination: '/notegenerator/index.html',
+        permanent: true,
       },
     ];
   },
