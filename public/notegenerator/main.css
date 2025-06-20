@@ -39,16 +39,16 @@ body {
     margin-right: 5px; 
     font-size: 0.8em; /* Slightly smaller 'x' for removal */
     cursor: pointer;
-    padding: 0; /* Remove any default padding that might affect its size */
-    /* Consider absolute positioning if flexbox alone doesn't give precise control,
-       but usually, increased container padding and flex order is enough. */
-    /* top: 50%; */
-    /* left: 5px; */
-    /* transform: translateY(-50%); */
+    padding: 0; 
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
     color: #cbd5e0 !important; /* hover effect */
+}
+
+/* New rule to vertically center the placeholder text */
+.select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+    line-height: 42px;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
