@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link"; // Import Link for internal navigation
 import { Geist, Geist_Mono } from "next/font/google";
 
