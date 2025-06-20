@@ -77,7 +77,7 @@ $(document).ready(function() {
             // Get full names for diagnoses, not just codes
             const selectedDiagnosisNames = selectedDiagnoses.map(code => {
                 const classificationDiagnoses = allDiagnosesData[currentDiagnosisClassification] || [];
-                const diagnosisObj = classificationDiagnificationDiagnoses.find(d => d.code === code);
+                const diagnosisObj = classificationDiagnoses.find(d => d.code === code);
                 return diagnosisObj ? diagnosisObj.name : code; // Fallback to code if name not found
             });
             diagnosisText = `${currentDiagnosisClassification} diagnosis of ${selectedDiagnosisNames.join(', ')}`;
