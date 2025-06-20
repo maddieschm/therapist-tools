@@ -29,23 +29,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Detect package manager needs adjustment to look in the subdirectory
+      # Detect package manager
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          # Check for yarn.lock or package.json within the 'my-therapist-app' directory
-          if [ -f "${{ github.workspace }}/my-therapist-app/yarn.lock" ]; then
+          # Check for yarn.lock or package.json in the root directory
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT # Changed to install for consistency
+            echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
             exit 0
-          elif [ -f "${{ github.workspace }}/my-therapist-app/package.json" ]; then
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT # Changed to install for consistency
+            echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
             exit 0
           else
-            echo "Unable to determine package manager in my-therapist-app"
+            echo "Unable to determine package manager in root directory"
             exit 1
           fi
 
@@ -53,8 +53,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          # Cache path needs to reflect subdirectory:
-          cache-dependency-path: my-therapist-app/${{ steps.detect-package-manager.outputs.manager }}.lock # Adjust cache path
+          # Cache path for the root directory
+          cache-dependency-path: ${{ steps.detect-package-manager.outputs.manager }}.lock
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -69,32 +69,28 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            my-therapist-app/.next/cache # Adjust cache path to subdirectory
+            .next/cache # Cache path for the root directory
           # Generate a new cache whenever packages or source files change.
-          # Hash files need to look inside the subdirectory
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('my-therapist-app/**/package-lock.json', 'my-therapist-app/**/yarn.lock') }}-${{ hashFiles('my-therapist-app/**/*.js', 'my-therapist-app/**/*.jsx', 'my-therapist-app/**/*.ts', 'my-therapist-app/**/*.tsx') }}
+          # Hash files for the root directory
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('my-therapist-app/**/package-lock.json', 'my-therapist-app/**/yarn.lock') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
       - name: Install dependencies
-        run: |
-          cd my-therapist-app # Navigate into the subdirectory
-          ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
-        run: |
-          cd my-therapist-app # Navigate into the subdirectory
-          ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       # Add step to create CNAME file in the output directory
       - name: Create CNAME file for custom domain
-        run: echo "therapist-tools.mhcdt.com" > ./my-therapist-app/out/CNAME
+        run: echo "therapist-tools.mhcdt.com" > ./out/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./my-therapist-app/out # Path to the build output directory
+          path: ./out # Path to the build output directory
 
   # Deployment job
   deploy:
@@ -107,3 +103,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 # This action handles the final deployment to GitHub Pages
+        
