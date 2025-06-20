@@ -51,6 +51,11 @@ body {
     color: #cbd5e0 !important; /* hover effect */
 }
 
+/* New rule to vertically center the placeholder text */
+.select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+    line-height: 42px;
+}
+
 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
     padding-left: 0.75rem !important; /* p-3 equivalent */
     padding-top: 0.25rem;
