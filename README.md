@@ -1,6 +1,6 @@
 # Therapist Tools
 
-This is a [Next.js](https://nextjs.org) project and a collection of web-based tools designed to assist mental health clinicians in streamlining their workflow. The primary tool currently available is the "Counseling Session Notes Generator", aimed at simplifying note-taking, especially for neurodivergent therapists.
+This is a [Next.js](https://nextjs.org/) project and a collection of web-based tools designed to assist mental health clinicians in streamlining their workflow. The primary tools currently available are the "Counseling Session Notes Generator," "Client Therapy Letter Generator," and "Insurance Reimbursement Superbill Generator," aimed at simplifying documentation, especially for neurodivergent therapists.
 
 ## Available Tools
 
@@ -18,18 +18,40 @@ The "Counseling Session Notes Generator" is a static web application that helps 
 * **Data Export/Import (.json)**: Save and load all form inputs as a JSON file for reuse or template loading.
 * **Responsive and Accessible Design**: Built with Tailwind CSS and Select2 for responsiveness and enhanced accessibility.
 
-For detailed instructions on how to use the Counseling Session Notes Generator, please refer to its dedicated README: [Counseling Session Notes Generator README](https://github.com/maddieschm/therapist-tools/blob/3f7391db35f4c52f1bc3a9312917d4dbf4e403f7/public/notegenerator/README.md).
+For detailed instructions on how to use the Counseling Session Notes Generator, please refer to its dedicated README: [Counseling Session Notes Generator README](public/notegenerator/README.md).
+
+### Client Therapy Letter Generator
+
+The "Client Therapy Letter Generator" is a tool to quickly generate standardized client letters, such as Emotional Support Animal (ESA) and academic accommodation letters.
+
+**Key Features:**
+* **Letter Type Selection**: Choose from predefined letter types.
+* **Dynamic Fields**: Fill in client and clinician details, and the letter template will be populated accordingly.
+* **Accommodation Suggestions**: For academic accommodation letters, you can select from a list of suggested accommodations based on the client's diagnosis.
+* **Customizable**: Add a custom license type if not available in the dropdown and upload a signature image.
+* **Export and Import**: Save and load letter data as a JSON file.
+
+### Insurance Superbill Generator
+
+The "Insurance Superbill Generator" helps create and manage superbills for insurance reimbursement.
+
+**Key Features:**
+* **Collapsible Sections**: The form is organized into collapsible sections for practice, provider, and client information.
+* **Dynamic Service Entries**: Add multiple service entries with details like date of service, CPT code, and fees.
+* **Automated Calculations**: The tool automatically calculates total charges, amount paid, and balance due.
+* **Print and Export**: Print the generated superbill or export the data as a JSON file.
+* **Import Data**: Load client data from a previously saved JSON file.
 
 ## Technologies Used
 
-* **Next.js**
-* **React**
-* **TypeScript**
-* **Tailwind CSS**
-* **ESLint**
+* [Next.js](https://nextjs.org/)
+* [React](https://react.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [ESLint](https://eslint.org/)
 * **For the Note Generator**:
-    * jQuery
-    * Select2
+    * [jQuery](https://jquery.com/)
+    * [Select2](https://select2.org/)
 
 ## Getting Started
 
@@ -57,14 +79,11 @@ To set up and run this project on your local machine for development or testing:
     ```
     Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-5.  **Accessing the Counseling Session Notes Generator**:
-    Since the "Counseling Session Notes Generator" is a static application, you can access it directly after building the Next.js project or run it independently.
-    To run the static generator locally for development:
-    ```bash
-    cd public/notegenerator
-    python -m http.server # Or use `npx http-server .` if Node.js is preferred
-    ```
-    Then, open your web browser and navigate to `http://localhost:8000` (or the port indicated by your server).
+5.  **Accessing the Static Tools**:
+    The "Counseling Session Notes Generator," "Client Therapy Letter Generator," and "Insurance Superbill Generator" are static applications. You can access them directly after starting the development server at the following paths:
+    * `/notegenerator/index.html`
+    * `/lettergenerator/index.html`
+    * `/superbillgenerator/index.html`
 
 ## Project Structure
 ```
@@ -72,20 +91,12 @@ To set up and run this project on your local machine for development or testing:
 ├── .github/workflows/nextjs.yml  # GitHub Actions workflow for deployment
 ├── .gitignore                    # Specifies intentionally untracked files
 ├── README.md                     # Main project README
-├── eslint.config.mjs             # ESLint configuration
-├── next-env.d.ts                 # TypeScript declaration for Next.js environment
 ├── next.config.ts                # Next.js configuration
-├── package-lock.json             # npm lock file
 ├── package.json                  # Project dependencies and scripts
-├── postcss.config.mjs            # PostCSS configuration, includes Tailwind CSS
 ├── public/                       # Static assets
-│   └── notegenerator/            # Contains files for the Counseling Session Notes Generator
-│       ├── README.md             # Specific README for the Note Generator
-│       ├── diagnoses.json        # JSON data for ICD and DSM diagnoses
-│       ├── index.html            # Main HTML file for the Note Generator UI
-│       ├── index.js              # JavaScript logic for the Note Generator
-│       ├── main.css              # Custom CSS for styling and Select2 overrides
-│       └── therapy_styles.json   # JSON data for various therapy modalities
+│   ├── lettergenerator/          # Contains files for the Client Therapy Letter Generator
+│   ├── notegenerator/            # Contains files for the Counseling Session Notes Generator
+│   └── superbillgenerator/       # Contains files for the Insurance Superbill Generator
 ├── src/                          # Source code for the Next.js application
 │   └── pages/
 │       ├── _app.tsx              # Custom App component
@@ -108,19 +119,8 @@ Please ensure your code adheres to existing coding styles and includes relevant 
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/maddieschm/therapist-tools/blob/main/LICENSE).
+This project is licensed under the MIT License.
 
 ## Contact
 
 For any questions, suggestions, or feedback, please open an issue on this repository.
-
-## Acknowledgments and Credits
-
-* [Next.js](https://nextjs.org/)
-* [React](https://react.dev/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [jQuery](https://jquery.com/)
-* [Select2](https://select2.org/)
-* [Google Fonts](https://fonts.google.com/)
-* ICD and DSM diagnosis data
-* Therapy style data
