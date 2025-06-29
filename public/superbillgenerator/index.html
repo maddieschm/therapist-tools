@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Tools: Notes & Superbill</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body class="bg-indigo-950 text-sky-100 min-h-screen flex flex-col items-center p-4 font-inter">
+
+    <div class="main-content-wrapper">
+        <div class="container mx-auto p-6 bg-slate-800 rounded-lg shadow-xl w-full">
+            <div class="collapsible-container">
+                <h2 id="superbillHeader" class="collapsible-header text-4xl font-bold text-sky-300 text-center mb-6 cursor-pointer select-none">
+                    Insurance Reimbursement Superbill Generator <span class="collapse-icon">▼</span>
+                </h2>
+                <div class="collapsible-content">
+                    <div class="p-4 bg-slate-700 rounded-md mb-6 border border-sky-800">
+                        <h4 class="text-lg font-semibold text-sky-200 mb-2">How to Use This Section</h4>
+                        <ul class="list-disc list-inside text-sm text-sky-100 space-y-1">
+                            <li>Completely fill out the Practice, Provider, and Client information sections.</li>
+                            <li>Diagnosis details may be auto-filled from the Notes Generator above or entered manually.</li>
+                            <li>Add each session as a separate "Service Rendered," including the date, CPT code, and fees.</li>
+                            <li>Click "Generate Superbill" to create a view of the final document.</li>
+                        </ul>
+                    </div>
+                    <form id="superbillForm" class="space-y-4">
+                        <section class="form-section">
+                            <h3 class="text-xl font-semibold text-sky-200 mb-4">Practice Information</h3>
+                            <label for="superbillPracticeName" class="block text-lg font-semibold text-sky-200 mb-2">Practice Name:</label>
+                            <input type="text" id="superbillPracticeName" placeholder="[Your Practice Name]" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillPracticeAddress" class="block text-lg font-semibold text-sky-200 mb-2">Practice Address:</label>
+                            <input type="text" id="superbillPracticeAddress" placeholder="[Your Practice Street Address]" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <input type="text" id="superbillPracticeCityStateZip" placeholder="[City, WA, Zip Code]" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillPracticePhone" class="block text-lg font-semibold text-sky-200 mb-2">Practice Phone:</label>
+                            <input type="tel" id="superbillPracticePhone" placeholder="[Your Phone Number]" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillPracticeEmail" class="block text-lg font-semibold text-sky-200 mb-2">Practice Email:</label>
+                            <input type="email" id="superbillPracticeEmail" placeholder="[Your Email Address]" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillPracticeWebsite" class="block text-lg font-semibold text-sky-200 mb-2">Practice Website (Optional):</label>
+                            <input type="url" id="superbillPracticeWebsite" placeholder="[Your Website]" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                        </section>
+
+                        <section class="form-section">
+                            <h3 class="text-xl font-semibold text-sky-200 mb-4">Provider Information</h3>
+                            <label for="superbillProviderName" class="block text-lg font-semibold text-sky-200 mb-2">Provider Name:</label>
+                            <input type="text" id="superbillProviderName" placeholder="[Your Full Name]" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500 mb-2">
+                            <p class="text-lg font-semibold text-sky-200 mb-2">Provider Credential:</p>
+                            <div class="flex flex-wrap gap-4 mb-4">
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="providerCredential" value="LMHC" class="form-radio text-indigo-500 rounded-md focus:ring-indigo-500 h-5 w-5" checked>
+                                    <span class="ml-2 text-sky-100">LMHC</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="providerCredential" value="LICSW" class="form-radio text-indigo-500 rounded-md focus:ring-indigo-500 h-5 w-5">
+                                    <span class="ml-2 text-sky-100">LICSW</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="providerCredential" value="LMFT" class="form-radio text-indigo-500 rounded-md focus:ring-indigo-500 h-5 w-5">
+                                    <span class="ml-2 text-sky-100">LMFT</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="providerCredential" value="PsyD" class="form-radio text-indigo-500 rounded-md focus:ring-indigo-500 h-5 w-5">
+                                    <span class="ml-2 text-sky-100">PsyD</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="providerCredential" value="PhD" class="form-radio text-indigo-500 rounded-md focus:ring-indigo-500 h-5 w-5">
+                                    <span class="ml-2 text-sky-100">PhD</span>
+                                </label>
+                            </div>
+                            <label for="superbillProviderLicense" class="block text-lg font-semibold text-sky-200 mb-2">Provider License Number:</label>
+                            <input type="text" id="superbillProviderLicense" placeholder="[Your License Number]" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillNpi" class="block text-lg font-semibold text-sky-200 mb-2">National Provider Identifier (NPI):</label>
+                            <input type="text" id="superbillNpi" pattern="\d{10}" title="NPI must be 10 digits" placeholder="[Your 10-digit NPI]" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                        </section>
+
+                        <section class="form-section">
+                            <h3 class="text-xl font-semibold text-sky-200 mb-4">Client Information</h3>
+                            <input type="hidden" id="superbillClientId" value="">
+                            <label for="superbillClientName" class="block text-lg font-semibold text-sky-200 mb-2">Client Name (Legal):</label>
+                            <input type="text" id="superbillClientName" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillClientDOB" class="block text-lg font-semibold text-sky-200 mb-2">Client Date of Birth:</label>
+                            <input type="date" id="superbillClientDOB" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillClientAddress" class="block text-lg font-semibold text-sky-200 mb-2">Client Address:</label>
+                            <input type="text" id="superbillClientAddress" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <input type="text" id="superbillClientCityStateZip" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillClientPhone" class="block text-lg font-semibold text-sky-200 mb-2">Client Phone Number:</label>
+                            <input type="tel" id="superbillClientPhone" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillClientInsuranceId" class="block text-lg font-semibold text-sky-200 mb-2">Client Insurance ID Number:</label>
+                            <input type="text" id="superbillClientInsuranceId" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                        </section>
+
+                        <section class="form-section">
+                            <h3 class="text-xl font-semibold text-sky-200 mb-4">Diagnosis Information</h3>
+                            <label for="superbillPrimaryDiagnosisDescription" class="block text-lg font-semibold text-sky-200 mb-2">Primary Diagnosis Description:</label>
+                            <input type="text" id="superbillPrimaryDiagnosisDescription" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillPrimaryDiagnosisCode" class="block text-lg font-semibold text-sky-200 mb-2">Primary Diagnosis (ICD-10 Code):</label>
+                            <input type="text" id="superbillPrimaryDiagnosisCode" placeholder="e.g., F41.1" required class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillSecondaryDiagnosisDescription" class="block text-lg font-semibold text-sky-200 mb-2">Secondary Diagnosis Description (Optional):</label>
+                            <input type="text" id="superbillSecondaryDiagnosisDescription" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                            <label for="superbillSecondaryDiagnosisCode" class="block text-lg font-semibold text-sky-200 mb-2">Secondary Diagnosis (ICD-10 Code, Optional):</label>
+                            <input type="text" id="superbillSecondaryDiagnosisCode" placeholder="e.g., F32.1" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                        </section>
+
+                        <section class="form-section">
+                            <h3 class="text-xl font-semibold text-sky-200 mb-4">Services Rendered</h3>
+                            <div id="superbillServiceEntries"></div>
+                            <button type="button" id="addSuperbillService" class="mt-2 px-4 py-2 bg-sky-600 text-white font-semibold rounded-md shadow-md hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition duration-200">Add Another Service</button>
+                        </section>
+
+                        <div class="flex flex-wrap justify-center items-center gap-4 mt-8 pt-6 border-t border-gray-700">
+                            <button type="submit" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-200">Generate Superbill</button>
+                            <button type="button" id="addNewClientButton" class="px-6 py-3 bg-green-600 text-white font-semibold rounded-md shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-200">Add New Client</button>
+                            <button type="button" id="printSuperbill" class="px-6 py-3 bg-emerald-600 text-white font-semibold rounded-md shadow-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition duration-200">Print Superbill</button>
+                            <button type="button" id="exportSuperbillJsonButton" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-md shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition duration-200">Export Data (.json)</button>
+                            <button type="button" id="importSuperbillJsonButton" class="px-6 py-3 bg-orange-600 text-white font-semibold rounded-md shadow-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition duration-200">Import Data (.json)</button>
+                            <input type="file" id="importSuperbillJsonFile" class="hidden" accept=".json">
+                            <button type="reset" form="superbillForm" class="px-6 py-3 bg-gray-600 text-white font-semibold rounded-md shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition duration-200">Clear Form</button>
+                        </div>
+                    </form>
+
+                    <div id="superbillOutput" class="superbill-output mt-8 p-6 bg-gray-700 rounded-md shadow-inner hidden"></div>
+
+                    <div class="mt-8 pt-6 border-t border-gray-700 w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="bg-slate-700 p-4 rounded-lg border border-slate-600">
+                                <h4 class="text-lg font-semibold text-sky-200 mb-2">Printing Instructions</h4>
+                                <p class="text-sm text-gray-400">
+                                    After generating a superbill, click the "Print Superbill" button. In the browser's print dialog, choose "Save as PDF" as the destination to create a digital file for your client.
+                                </p>
+                            </div>
+                            <div class="bg-slate-700 p-4 rounded-lg border border-slate-600">
+                                <h4 class="text-lg font-semibold text-sky-200 mb-2">Export/Import Instructions</h4>
+                                <p class="text-sm text-gray-400">
+                                    Use "Export" to save a client's superbill data as a JSON file for your records. Use "Import" to load data from a previously saved JSON file, pre-filling the form.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

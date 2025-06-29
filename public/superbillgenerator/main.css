@@ -1,0 +1,290 @@
+/* Custom CSS for Counseling Session Notes Generator and Superbill */
+
+body {
+    /* Base styles are handled by Tailwind CSS in index.html */
+    font-family: 'Inter', sans-serif; /* Ensuring Inter font is applied */
+}
+
+/* Specific styling for Select2 elements to match your theme */
+.select2-container--default .select2-selection--multiple {
+    background-color: #4A5568 !important; /* bg-gray-700 equivalent */
+    border: 1px solid #4A5568 !important; /* border-gray-600 equivalent */
+    border-radius: 0.375rem !important; /* rounded-md equivalent */
+    min-height: 42px; /* Adjust height as needed */
+}
+
+/* Styling for the selected items (tags) within the Select2 input field */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #6B46C1 !important; /* purple-600 equivalent */
+    color: white !important; /* Ensure text color is white for legibility */
+    border: none !important; /* Removed border to eliminate potential "weird line" */
+    border-radius: 0.25rem !important; /* sm rounded */
+    /* Adjusted padding: top/bottom 0.2rem, right 0.5rem, LEFT increased for space */
+    padding: 0.2rem 0.5rem 0.2rem 1.5rem !important;
+    margin-top: 0.4rem !important;
+    margin-right: 0.4rem !important;
+    line-height: 1; /* Ensures text aligns well vertically */
+    box-shadow: none !important; /* Ensure no weird lines from box-shadow */
+    text-shadow: none !important; /* Ensure text is crisp and no shadow interferes */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    position: relative; /* Added for positioning the 'x' if needed more precisely */
+}
+
+/* Specific styling for the 'x' button (remove icon) */
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: white !important; /* Keep 'x' button white for consistency */
+    order: -1; /* Ensures 'x' comes before text visually in flex order */
+    /* Adjusted margin-right to provide spacing between 'x' and text */
+    margin-right: 5px; 
+    font-size: 0.8em; /* Slightly smaller 'x' for removal */
+    cursor: pointer;
+    padding: 0; 
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color: #cbd5e0 !important; /* hover effect */
+}
+
+/* New rule to vertically center the placeholder text */
+.select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+    line-height: 42px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding-left: 0.75rem !important; /* p-3 equivalent */
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    color: #E2E8F0 !important; /* text-sky-100 equivalent */
+}
+
+.select2-dropdown {
+    background-color: #2D3748 !important; /* darker gray for dropdown */
+    border: 1px solid #4A5568 !important;
+    border-radius: 0.375rem !important;
+}
+
+.select2-container--default .select2-results__option {
+    color: #E2E8F0 !important; /* text-sky-100 equivalent */
+    padding: 0.5rem 0.75rem !important;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #4C51BF !important; /* indigo-600 equivalent for highlight */
+    color: white !important;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: #6B46C1 !important; /* purple-600 equivalent for selected */
+    color: white !important;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #6B46C1 !important; /* purple-600 equivalent for already selected */
+    color: white !important;
+}
+
+/* Ensure focus styles are visually clear for accessibility */
+.select2-container--default .select2-selection--multiple:focus-within,
+.select2-search__field:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5) !important; /* focus:ring-indigo-500 equivalent */
+    border-color: #6366F1 !important; /* focus:border-indigo-500 equivalent */
+}
+
+/* Ensure the textarea matches other input styles */
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* General form section styling for both tools */
+.form-section {
+    border: 1px solid #3b455b; /* Slightly lighter border for sections */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #364052; /* Slightly darker background for sections */
+}
+
+.form-section h3 {
+    color: #a7f3d0; /* a nice green for subheadings */
+    border-bottom: 1px solid #4a5568;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Specific styles for superbill output */
+.superbill-output {
+    background-color: #2D3748; /* Darker grey for output area */
+    border: 1px solid #4A5568;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    overflow-x: auto; /* For table scroll on smaller screens */
+    color: #E2E8F0; /* Light text color */
+}
+
+.superbill-output h2,
+.superbill-output h3 {
+    color: #a7f3d0; /* Green headings */
+    border-bottom: 1px solid #4A5568;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.superbill-output p {
+    margin-bottom: 0.5rem;
+}
+
+.superbill-output table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: #1a202c; /* Even darker for table background */
+}
+
+.superbill-output th,
+.superbill-output td {
+    border: 1px solid #4A5568;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.superbill-output th {
+    background-color: #2D3748; /* Darker for table headers */
+    font-weight: bold;
+    color: #E2E8F0;
+}
+
+.superbill-output .section-title {
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1em;
+    color: #a7f3d0; /* Green for section titles within superbill */
+}
+
+.superbill-output .footer-notes {
+    font-size: 0.9em;
+    margin-top: 1.5rem;
+    border-top: 1px dashed #4A5568;
+    padding-top: 1rem;
+    color: #A0AEC0; /* Lighter grey for footer notes */
+}
+
+/* New rules for list layout */
+.main-content-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 20px; /* Space between the two containers */
+    align-items: center; /* Center the containers horizontally */
+    max-width: 900px; /* Set a max-width for the single column */
+    width: 100%;
+    margin: 20px auto; /* Center the wrapper on the page */
+}
+
+.main-content-wrapper > .container {
+    width: 100%; /* Make containers take the full width of the wrapper */
+}
+
+
+/* New rules for collapsible sections */
+.collapsible-header {
+    display: flex;
+    justify-content: space-between; /* Space out title and icon */
+    align-items: center;
+    background-color: #3b455b; /* Slightly darker background for headers */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0; /* Remove margin-bottom to keep it tight with content */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible-header:hover {
+    background-color: #4a5568; /* Darker on hover */
+}
+
+.collapsible-header .collapse-icon {
+    transition: transform 0.3s ease;
+    font-size: 1.2em; /* Slightly larger icon */
+    margin-left: 10px; /* Space from text */
+}
+
+.collapsible-header.collapsed .collapse-icon {
+    transform: rotate(-90deg); /* Rotate down arrow for collapsed state */
+}
+
+.collapsible-content {
+    max-height: 5000px; /* Large enough to accommodate content when expanded */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    padding-top: 1rem; /* Add padding to the top of the content */
+}
+
+.collapsible-content.collapsed {
+    max-height: 0;
+    padding-top: 0;
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+        padding: 0;
+        margin: 0;
+    }
+    .main-content-wrapper, .container, .form-section {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        max-width: none;
+        border: none;
+        background-color: #fff;
+    }
+    #noteForm, #superbillForm, .collapsible-header,
+    #superbillOutput .flex.justify-center.gap-4.mt-6,
+    .main-content-wrapper > .container:first-child { /* Hide the entire notes container */
+        display: none;
+    }
+    .superbill-output {
+        display: block !important;
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        background-color: #fff;
+        color: #000;
+    }
+    .superbill-output h2,
+    .superbill-output h3,
+    .superbill-output .section-title {
+        color: #000 !important; /* Black headings for print */
+        border-color: #000 !important;
+    }
+    .superbill-output p, .superbill-output li {
+        color: #000;
+    }
+    .superbill-output table {
+        width: 100%;
+        font-size: 0.9em;
+        background-color: #fff; /* White background for table in print */
+    }
+    .superbill-output th, .superbill-output td {
+        padding: 5px;
+        border: 1px solid #000; /* Black borders for table in print */
+        color: #000;
+    }
+    .superbill-output th {
+        background-color: #e0e0e0; /* Light grey for table headers in print */
+    }
+}
