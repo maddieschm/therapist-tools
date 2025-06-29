@@ -23,11 +23,22 @@ export default async function handler(
     const fileContents = await fs.readFile(filePath, 'utf8');
     const data = JSON.parse(fileContents);
     res.status(200).json(data);
-  } catch (e) {
-    // This log now uses the 'e' variable, which will fix the linter error.
+  } 
+  
+  catch (e) {
     console.error(`\n--- API ROUTE FAILED ---`);
-    console.error(`Could not read the file at path: ${filePath}`);
-    console.error(`The specific error was:`, e); // This line uses 'e'.
+    console.error(`Could not find or read the file at the expected path:`);
+    console.error(filePath);
+    console.error(`Specific Error:`, e); // Log the actual error object
+    
+    try {
+        const directoryContents = await fs.readdir(baseDir);
+        console.error(`\nDirectory contents of '${baseDir}':`);
+        console.error(directoryContents);
+    } catch (dirError) {
+        console.error(`\nCould not read the base directory: ${baseDir}`, dirError);
+    }
+    
     console.error(`------------------------\n`);
     
     res.status(404).json({ error: 'The requested file was not found.' });
