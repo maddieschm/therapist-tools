@@ -4,7 +4,7 @@ $(document).ready(function() {
     let signatureImageData = '';
     let diagnoses = {};
     let accommodationSuggestions = {};
-    let selectedAccommodations = []; // Array to store added accommodations
+    let selectedAccommodations = []; 
 
     // Initialize Select2 dropdowns
     $('#letterTypeSelect, #licenseTypeSelect, #diagnosisSelect').select2({
@@ -13,17 +13,18 @@ $(document).ready(function() {
     });
 
     // --- Data Loading ---
-    $.getJSON('/api/letter-data?file=letter-types.json', data => { letterTypesData = data.letterTypes; const select = $('#letterTypeSelect'); select.append('<option value=""></option>'); letterTypesData.forEach(lt => select.append(`<option value="${lt.id}">${lt.name}</option>`)); select.trigger('change'); }).fail(handleAjaxError('letter-types.json'));
-    $.getJSON('/api/letter-data?file=license-types.json', data => { licenseTypes = data.licenseTypes; const select = $('#licenseTypeSelect'); select.append('<option value=""></option>'); licenseTypes.forEach(t => select.append(`<option value="${t}">${t}</option>`)); select.trigger('change'); }).fail(handleAjaxError('license-types.json'));
-    $.getJSON('/api/letter-data?file=diagnoses.json', data => { diagnoses = data; }).fail(handleAjaxError('diagnoses.json'));
-    $.getJSON('/api/letter-data?file=accommodations.json', data => { accommodationSuggestions = data; }).fail(handleAjaxError('accommodations.json'));
+    // Update these paths to be relative to the HTML file
+    $.getJSON('letter-types.json', data => { letterTypesData = data.letterTypes; const select = $('#letterTypeSelect'); select.append('<option value=""></option>'); letterTypesData.forEach(lt => select.append(`<option value="${lt.id}">${lt.name}</option>`)); select.trigger('change'); }).fail(handleAjaxError('letter-types.json'));
+    $.getJSON('license-types.json', data => { licenseTypes = data.licenseTypes; const select = $('#licenseTypeSelect'); select.append('<option value=""></option>'); licenseTypes.forEach(t => select.append(`<option value="${t}">${t}</option>`)); select.trigger('change'); }).fail(handleAjaxError('license-types.json'));
+    $.getJSON('diagnoses.json', data => { diagnoses = data; }).fail(handleAjaxError('diagnoses.json'));
+    $.getJSON('accommodations.json', data => { accommodationSuggestions = data; }).fail(handleAjaxError('accommodations.json'));
 
     // --- Event Handlers ---
     $('#signatureUpload').on('change', function() { if (this.files && this.files[0]) { const reader = new FileReader(); reader.onload = e => { signatureImageData = e.target.result; $('#signaturePreview').attr('src', signatureImageData).removeClass('hidden'); }; reader.readAsDataURL(this.files[0]); } });
     $('#licenseTypeSelect').on('change', function() { $('#customLicenseTypeWrapper').toggleClass('hidden', $(this).val() !== 'Other'); });
     $('#letterTypeSelect').on('change', function() { const type = $(this).val(); $('#formFields').toggleClass('hidden', !type); $('#generatedLetterContainer, #printLetterButton').addClass('hidden'); $('#esaFields, #accommodationFields').addClass('hidden'); if (type === 'esa') $('#esaFields').removeClass('hidden'); else if (type === 'accommodation') $('#accommodationFields').removeClass('hidden'); });
     $('input[name="codingSystem"]').on('change', function() { const system = $(this).val(); const select = $('#diagnosisSelect'); select.empty().append('<option value=""></option>'); if (diagnoses[system]) { diagnoses[system].forEach(dx => select.append(`<option value="${dx.code}">${dx.code} - ${dx.name}</option>`)); } select.trigger('change'); });
-    $('#diagnosisSelect').on('change', function() { const code = $(this).val(); const select = $('#suggestionSelect'); select.empty(); if (code && accommodationSuggestions[code]) { select.prop('disabled', false).append('<option value="">-- Select a Suggestion --</option>'); accommodationSuggestions[code].forEach((s, i) => select.append(`<option value="${i}">${s.name}</option>`)); } else { select.prop('disabled', true).append('<option value="">-- No Suggestions Available --</option>'); } $('#addAccommodationButton').prop('disabled', true); });
+    $('#diagnosisSelect').on('change', function() { const code = $(this).val(); const select = $('#suggestionSelect'); select.empty(); if (code && accommodationSuggestions[code]) { select.prop('disabled', false).append('<option value="">-- Select a Suggestion --</option>'); accommodationSuggestions[code].forEach((s, i) => select.append(`<option value="${i}">${s.name}</option>`)); } else { select.prop('disabled', true).append('<option value="">-- First Select a Diagnosis --</option>'); } $('#addAccommodationButton').prop('disabled', true); });
     $('#suggestionSelect').on('change', function() { $('#addAccommodationButton').prop('disabled', $(this).val() === ""); });
 
     $('#addAccommodationButton').on('click', function() {
@@ -36,25 +37,13 @@ $(document).ready(function() {
         $('#suggestionSelect').val("").trigger('change');
     });
     
-    // Event handler for the new "Add Custom Accommodation" button
     $('#addCustomAccommodationButton').on('click', function() {
         const customName = $('#customAccomName').val().trim();
         const customDesc = $('#customAccomDesc').val().trim();
-
-        if (!customName || !customDesc) {
-            alert('Please enter both a name and a description for the custom accommodation.');
-            return;
-        }
-
-        const customSuggestion = {
-            name: customName,
-            recommendation: customDesc,
-            id: Date.now()
-        };
+        if (!customName || !customDesc) return alert('Please enter both a name and a description for the custom accommodation.');
+        const customSuggestion = { name: customName, recommendation: customDesc, id: Date.now() };
         selectedAccommodations.push(customSuggestion);
         renderSelectedAccommodations();
-
-        // Clear the custom input fields
         $('#customAccomName').val('');
         $('#customAccomDesc').val('');
     });
@@ -91,10 +80,11 @@ $(document).ready(function() {
         if (!selectedLetterTypeId) return alert("Please select a letter type first.");
         const selectedLetterType = letterTypesData.find(lt => lt.id === selectedLetterTypeId);
         if (!selectedLetterType) return;
-
+        
         const licenseType = $('#licenseTypeSelect').val() === 'Other' ? $('#customLicenseType').val() : $('#licenseTypeSelect').val();
 
-        $.getJSON('/api/letter-data?file=' + selectedLetterType.templatePath, function(template) {
+        // Update this path to be relative
+        $.getJSON(selectedLetterType.templatePath, function(template) {
             let accommodationDetailsHtml = '';
             if (selectedLetterTypeId === 'accommodation' && selectedAccommodations.length > 0) {
                 accommodationDetailsHtml = '<ul style="list-style-position: inside; padding-left: 10px;">';
@@ -218,6 +208,7 @@ $(document).ready(function() {
             alert(`Failed to load a required file: ${fileName}.`);
         };
     }
+
     function fillTemplate(templateString, data) {
         return templateString.replace(/\[(.*?)\]/g, (match, placeholder) => {
             const key = placeholder.toUpperCase();
