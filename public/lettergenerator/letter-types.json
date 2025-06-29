@@ -1,0 +1,14 @@
+{
+    "letterTypes": [
+        {
+            "id": "esa",
+            "name": "Emotional Support Animal Letter",
+            "templatePath": "templates/esa_letter.json"
+        },
+        {
+            "id": "accommodation",
+            "name": "Academic Accommodation Letter",
+            "templatePath": "templates/accommodation_letter.json"
+        }
+    ]
+}

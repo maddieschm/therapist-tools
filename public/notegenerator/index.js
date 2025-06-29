@@ -235,7 +235,7 @@ $(document).ready(function() {
                     }
 
                 } catch (error) {
-                    console.error("Error parsing JSON file: ", error);
+                    console.error("Error parsing JSON file:", error);
                     alert("Invalid JSON file. Please ensure it's a valid JSON format.");
                 }
             };

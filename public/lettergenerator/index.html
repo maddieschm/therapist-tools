@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Therapy Letter Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-indigo-950 text-sky-100 min-h-screen flex flex-col justify-center items-center p-4 font-sans">
+
+    <div class="container mx-auto p-6 bg-slate-800 rounded-lg shadow-xl max-w-3xl w-full">
+        <h1 class="text-4xl font-bold text-sky-300 text-center mb-6">Client Therapy Letter Generator</h1>
+
+        <form id="letterGeneratorForm" class="space-y-4">
+            <div class="mb-4">
+                <label for="letterTypeSelect" class="block text-lg font-semibold text-sky-200 mb-2">Select Letter Type:</label>
+                <select id="letterTypeSelect" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></select>
+            </div>
+
+            <div id="formFields" class="hidden space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="clientFirstName" class="block text-lg font-semibold text-sky-200 mb-2">Client's First Name:</label>
+                        <input type="text" id="clientFirstName" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                    </div>
+                    <div>
+                        <label for="clientLastName" class="block text-lg font-semibold text-sky-200 mb-2">Client's Last Name:</label>
+                        <input type="text" id="clientLastName" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="clinicianFirstName" class="block text-lg font-semibold text-sky-200 mb-2">Clinician's First Name:</label>
+                        <input type="text" id="clinicianFirstName" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                    </div>
+                    <div>
+                        <label for="clinicianLastName" class="block text-lg font-semibold text-sky-200 mb-2">Clinician's Last Name:</label>
+                        <input type="text" id="clinicianLastName" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                    </div>
+                </div>
+                <div>
+                    <label for="signatureUpload" class="block text-lg font-semibold text-sky-200 mb-2">Upload Signature Image:</label>
+                    <input type="file" id="signatureUpload" accept="image/*" class="w-full text-sky-100 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-indigo-600 file:text-white hover:file:bg-indigo-700">
+                    <img id="signaturePreview" src="#" alt="Signature Preview" class="hidden mt-4 max-h-20">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="licenseTypeSelect" class="block text-lg font-semibold text-sky-200 mb-2">Clinician's License Type:</label>
+                        <select id="licenseTypeSelect" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></select>
+                    </div>
+                    <div id="customLicenseTypeWrapper" class="hidden">
+                        <label for="customLicenseType" class="block text-lg font-semibold text-sky-200 mb-2">Custom License Type:</label>
+                        <input type="text" id="customLicenseType" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                    </div>
+                    <div>
+                        <label for="licenseNumber" class="block text-lg font-semibold text-sky-200 mb-2">License Number:</label>
+                        <input type="text" id="licenseNumber" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                    </div>
+                </div>
+                <div>
+                    <label for="clinicianEmail" class="block text-lg font-semibold text-sky-200 mb-2">Clinician's Email:</label>
+                    <input type="email" id="clinicianEmail" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                </div>
+
+                <div id="esaFields" class="hidden space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="startDate" class="block text-lg font-semibold text-sky-200 mb-2">Client Since (Month and Year):</label>
+                            <input type="month" id="startDate" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                        </div>
+                        <div>
+                            <label for="licenseExpiration" class="block text-lg font-semibold text-sky-200 mb-2">License Expiration Date:</label>
+                            <input type="date" id="licenseExpiration" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="animalType" class="block text-lg font-semibold text-sky-200 mb-2">Animal Type:</label>
+                        <input type="text" id="animalType" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="e.g., dog, cat">
+                    </div>
+                    <div>
+                        <label for="petDescription" class="block text-lg font-semibold text-sky-200 mb-2">Description of Pet:</label>
+                        <textarea id="petDescription" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea>
+                    </div>
+                </div>
+
+                <div id="accommodationFields" class="hidden space-y-4">
+                    <div class="p-4 bg-slate-700 rounded-lg space-y-4 border border-slate-600">
+                        <h4 class="text-xl font-semibold text-sky-200">Clinical Information</h4>
+                        <div class="flex items-center gap-x-4">
+                            <span class="text-lg font-semibold text-sky-200">Coding System:</span>
+                            <label><input type="radio" name="codingSystem" value="ICD" class="mr-1"> ICD</label>
+                            <label><input type="radio" name="codingSystem" value="DSM" class="mr-1"> DSM</label>
+                        </div>
+                        <div>
+                            <label for="diagnosisSelect" class="block text-lg font-semibold text-sky-200 mb-2">Select Diagnosis:</label>
+                            <select id="diagnosisSelect" class="w-full"></select>
+                        </div>
+                        <hr class="border-slate-600">
+                        <h4 class="text-xl font-semibold text-sky-200">Accommodation Builder</h4>
+                        <div>
+                            <label for="suggestionSelect" class="block text-lg font-semibold text-sky-200 mb-2">Add a Suggested Accommodation:</label>
+                            <div class="flex gap-2">
+                                <select id="suggestionSelect" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100" disabled>
+                                    <option value="">-- First Select a Diagnosis --</option>
+                                </select>
+                                <button type="button" id="addAccommodationButton" class="px-4 py-2 bg-green-600 text-white font-semibold rounded-md shadow-md hover:bg-green-700 disabled:bg-gray-500 disabled:cursor-not-allowed" disabled>Add</button>
+                            </div>
+                        </div>
+                         <div class="space-y-2">
+                             <label class="block text-lg font-semibold text-sky-200">Or Write a Custom Accommodation:</label>
+                            <input type="text" id="customAccomName" placeholder="Custom Accommodation Name (e.g., Use of a Calculator)" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                             <textarea id="customAccomDesc" rows="2" placeholder="Recommendation/Description..." class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea>
+                            <button type="button" id="addCustomAccommodationButton" class="px-4 py-2 bg-sky-600 text-white font-semibold rounded-md shadow-md hover:bg-sky-700">Add Custom</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h4 class="text-xl font-semibold text-sky-200">Selected Accommodations for Letter:</h4>
+                        <div id="selectedAccommodations" class="p-4 bg-slate-900 rounded-lg min-h-[50px] space-y-3">
+                            <p class="text-gray-400">No accommodations added yet.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="recipientName" class="block text-lg font-semibold text-sky-200 mb-2">Recipient Name/Department:</label>
+                        <input type="text" id="recipientName" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="e.g., Disability Resource Center">
+                    </div>
+                    <div>
+                        <label for="institutionName" class="block text-lg font-semibold text-sky-200 mb-2">Institution Name:</label>
+                        <input type="text" id="institutionName" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="e.g., University of Washington">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="generatedLetterContainer" class="hidden bg-gray-700 p-4 rounded-md shadow-inner mb-6">
+                <h3 class="text-xl font-semibold text-sky-200 mb-2">Generated Letter:</h3>
+                <div id="generatedLetter" class="text-sky-100 font-sans"></div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <button type="button" id="generateLetterButton" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 focus:outline-none">Generate Letter</button>
+                <button type="button" id="printLetterButton" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 focus:outline-none hidden">Print Letter</button>
+                <button type="button" id="exportJsonButton" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-md shadow-md hover:bg-purple-700 focus:outline-none">Export .json</button>
+                <button type="button" id="importJsonButton" class="px-6 py-3 bg-orange-600 text-white font-semibold rounded-md shadow-md hover:bg-orange-700 focus:outline-none">Import .json</button>
+                <input type="file" id="importJsonFile" accept=".json" class="hidden">
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-import Link from "next/link"; // Import Link for internal navigation
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -26,16 +25,20 @@ export default function Home() {
         <h2 className="text-2xl font-semibold text-sky-200 mb-4">Available Tools:</h2>
         <ul className="list-disc list-inside text-lg text-sky-100 space-y-2">
           <li>
-            <Link href="/notegenerator/index.html" className="text-blue-400 hover:underline">
+            {/* Use a standard <a> tag for static assets */}
+            <a href="/notegenerator/index.html" className="text-blue-400 hover:underline">
               Counseling Session Notes Generator
-            </Link>{" "}
+            </a>{" "}
             - Streamline your psychotherapy session note-taking process.
           </li>
-          {/* Add more tools here as you develop them */}
+          <li>
+            {/* Use a standard <a> tag for static assets */}
+            <a href="/lettergenerator/index.html" className="text-blue-400 hover:underline">
+              Client Therapy Letter Generator
+            </a>{" "}
+            - Quickly generate standardized client letters.
+          </li>
         </ul>
-
-        {/* You can remove or keep the original Next.js boilerplate links/info below if desired */}
-        {/* Original content can go here if you want to keep it */}
 
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
