@@ -242,49 +242,76 @@ textarea {
         box-shadow: none;
         margin: 0;
         padding: 0;
-        max-width: none;
+        max-width: none; /* Allow content to expand to full print width */
         border: none;
         background-color: #fff;
     }
-    #noteForm, #superbillForm, .collapsible-header,
-    #superbillOutput .flex.justify-center.gap-4.mt-6,
-    .main-content-wrapper > .container:first-child { /* Hide the entire notes container */
-        display: none;
+
+    /* Hide specific UI elements that should not appear on the printed superbill */
+    h1, /* Main page title */
+    #superbillHeader, /* Collapsible header for superbill generator */
+    .collapsible-content > div.p-4.bg-slate-700, /* "How to Use This Section" div */
+    #superbillForm, /* The entire input form */
+    .collapsible-content > div.mt-8.pt-6.border-t, /* The "Printing Instructions" and "Export/Import Instructions" div */
+    #addNewClientButton, /* Hide individual buttons if they are outside #superbillForm */
+    #printSuperbill,
+    #exportSuperbillJsonButton,
+    #importSuperbillJsonButton,
+    #importSuperbillJsonFile,
+    button[type="reset"] {
+        display: none !important; /* Use !important to override any other display rules */
     }
+
+    /* Ensure the superbill output is fully visible and positioned correctly for printing */
     .superbill-output {
         display: block !important;
-        visibility: visible;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        border: none;
-        padding: 0;
-        margin: 0;
+        visibility: visible !important;
+        position: static !important; /* Change from absolute to static for normal document flow */
+        width: auto !important; /* Allow width to be determined by print page */
+        left: auto !important;
+        top: auto !important;
+        margin: 0 auto; /* Center the output horizontally if needed */
+        padding: 0; /* Reset padding for print layout */
         box-shadow: none;
         background-color: #fff;
         color: #000;
     }
+
+    /* Adjust font sizes and margins for readability in print */
     .superbill-output h2,
     .superbill-output h3,
     .superbill-output .section-title {
-        color: #000 !important; /* Black headings for print */
+        color: #000 !important;
         border-color: #000 !important;
+        font-size: 1.2em;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
     }
     .superbill-output p, .superbill-output li {
         color: #000;
+        font-size: 0.9em;
+        margin-bottom: 0.3em;
     }
     .superbill-output table {
         width: 100%;
-        font-size: 0.9em;
-        background-color: #fff; /* White background for table in print */
+        font-size: 0.8em;
+        background-color: #fff;
+        border-collapse: collapse;
+        margin-top: 1rem;
     }
     .superbill-output th, .superbill-output td {
-        padding: 5px;
-        border: 1px solid #000; /* Black borders for table in print */
+        padding: 4px;
+        border: 1px solid #000;
         color: #000;
     }
     .superbill-output th {
-        background-color: #e0e0e0; /* Light grey for table headers in print */
+        background-color: #e0e0e0;
+    }
+    .superbill-output .footer-notes {
+        font-size: 0.8em;
+        margin-top: 1.5rem;
+        border-top: 1px dashed #000;
+        padding-top: 0.8rem;
+        color: #555;
     }
 }
