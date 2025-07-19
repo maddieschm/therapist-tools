@@ -13,7 +13,6 @@ $(document).ready(function() {
     });
 
     // --- Data Loading ---
-    // Update these paths to be relative to the HTML file
     $.getJSON('letter-types.json', data => { letterTypesData = data.letterTypes; const select = $('#letterTypeSelect'); select.append('<option value=""></option>'); letterTypesData.forEach(lt => select.append(`<option value="${lt.id}">${lt.name}</option>`)); select.trigger('change'); }).fail(handleAjaxError('letter-types.json'));
     $.getJSON('license-types.json', data => { licenseTypes = data.licenseTypes; const select = $('#licenseTypeSelect'); select.append('<option value=""></option>'); licenseTypes.forEach(t => select.append(`<option value="${t}">${t}</option>`)); select.trigger('change'); }).fail(handleAjaxError('license-types.json'));
     $.getJSON('diagnoses.json', data => { diagnoses = data; }).fail(handleAjaxError('diagnoses.json'));
@@ -22,7 +21,29 @@ $(document).ready(function() {
     // --- Event Handlers ---
     $('#signatureUpload').on('change', function() { if (this.files && this.files[0]) { const reader = new FileReader(); reader.onload = e => { signatureImageData = e.target.result; $('#signaturePreview').attr('src', signatureImageData).removeClass('hidden'); }; reader.readAsDataURL(this.files[0]); } });
     $('#licenseTypeSelect').on('change', function() { $('#customLicenseTypeWrapper').toggleClass('hidden', $(this).val() !== 'Other'); });
-    $('#letterTypeSelect').on('change', function() { const type = $(this).val(); $('#formFields').toggleClass('hidden', !type); $('#generatedLetterContainer, #printLetterButton').addClass('hidden'); $('#esaFields, #accommodationFields').addClass('hidden'); if (type === 'esa') $('#esaFields').removeClass('hidden'); else if (type === 'accommodation') $('#accommodationFields').removeClass('hidden'); });
+    
+    $('#letterTypeSelect').on('change', function() {
+        const typeId = $(this).val();
+        const selectedLetterType = letterTypesData.find(lt => lt.id === typeId);
+
+        $('#formFields').toggleClass('hidden', !typeId);
+        $('#generatedLetterContainer, #printLetterButton').addClass('hidden');
+        $('#esaFields, #accommodationFields, #referralFields').addClass('hidden');
+        
+        if (selectedLetterType) {
+            renderCitations(selectedLetterType.citations);
+            if (typeId === 'esa') {
+                $('#esaFields').removeClass('hidden');
+            } else if (typeId === 'accommodation') {
+                $('#accommodationFields').removeClass('hidden');
+            } else if (typeId === 'referral') {
+                $('#referralFields').removeClass('hidden');
+            }
+        } else {
+            renderCitations([]); // Clear citations if no letter is selected
+        }
+    });
+
     $('input[name="codingSystem"]').on('change', function() { const system = $(this).val(); const select = $('#diagnosisSelect'); select.empty().append('<option value=""></option>'); if (diagnoses[system]) { diagnoses[system].forEach(dx => select.append(`<option value="${dx.code}">${dx.code} - ${dx.name}</option>`)); } select.trigger('change'); });
     $('#diagnosisSelect').on('change', function() { const code = $(this).val(); const select = $('#suggestionSelect'); select.empty(); if (code && accommodationSuggestions[code]) { select.prop('disabled', false).append('<option value="">-- Select a Suggestion --</option>'); accommodationSuggestions[code].forEach((s, i) => select.append(`<option value="${i}">${s.name}</option>`)); } else { select.prop('disabled', true).append('<option value="">-- First Select a Diagnosis --</option>'); } $('#addAccommodationButton').prop('disabled', true); });
     $('#suggestionSelect').on('change', function() { $('#addAccommodationButton').prop('disabled', $(this).val() === ""); });
@@ -74,6 +95,21 @@ $(document).ready(function() {
         });
     }
 
+    function renderCitations(citations) {
+        const container = $('#sourcesContainer');
+        const list = $('#sourcesList');
+        list.empty();
+
+        if (citations && citations.length > 0) {
+            citations.forEach(citation => {
+                list.append(`<p>${citation}</p>`);
+            });
+            container.removeClass('hidden');
+        } else {
+            container.addClass('hidden');
+        }
+    }
+
     // --- Main Buttons ---
     $('#generateLetterButton').on('click', function() {
         const selectedLetterTypeId = $('#letterTypeSelect').val();
@@ -83,7 +119,6 @@ $(document).ready(function() {
         
         const licenseType = $('#licenseTypeSelect').val() === 'Other' ? $('#customLicenseType').val() : $('#licenseTypeSelect').val();
 
-        // Update this path to be relative
         $.getJSON(selectedLetterType.templatePath, function(template) {
             let accommodationDetailsHtml = '';
             if (selectedLetterTypeId === 'accommodation' && selectedAccommodations.length > 0) {
@@ -98,17 +133,22 @@ $(document).ready(function() {
                 DATE_GENERATED: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
                 CLIENT_FIRST_NAME: $('#clientFirstName').val(),
                 CLIENT_FULL_NAME: `${$('#clientFirstName').val()} ${$('#clientLastName').val()}`,
+                CLIENT_DOB: new Date($('#clientDOB').val()).toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }),
                 LICENSE_TYPE: licenseType,
                 LICENSE_NUMBER: $('#licenseNumber').val(),
                 CLINICIAN_EMAIL: $('#clinicianEmail').val(),
                 CLINICIAN_NAME: `${$('#clinicianFirstName').val()} ${$('#clinicianLastName').val()}`,
                 START_DATE: new Date($('#startDate').val() + '-01').toLocaleDateString('en-US', { year: 'numeric', month: 'long' }),
-                LICENSE_EXPIRATION: new Date($('#licenseExpiration').val()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+                LICENSE_EXPIRATION: new Date($('#licenseExpiration').val()).toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }),
                 ANIMAL_TYPE: $('#animalType').val(),
                 PET_DESCRIPTION: $('#petDescription').val(),
                 ACCOMMODATION_DETAILS: accommodationDetailsHtml,
                 RECIPIENT_NAME_OR_DEPARTMENT: $('#recipientName').val(),
                 INSTITUTION_NAME: $('#institutionName').val(),
+                REFERRED_TO_PROVIDER: $('#referredToProvider').val(),
+                REASON_FOR_REFERRAL: $('#reasonForReferral').val(),
+                CLIENT_DIAGNOSIS: $('#clientDiagnosis').val(),
+                START_DATE: new Date($('#clientStartDate').val() + '-01').toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
             };
 
             let finalLetter = '';
@@ -153,7 +193,12 @@ $(document).ready(function() {
             diagnosisCode: $('#diagnosisSelect').val(),
             selectedAccommodations: selectedAccommodations,
             recipientName: $('#recipientName').val(),
-            institutionName: $('#institutionName').val()
+            institutionName: $('#institutionName').val(),
+            referredToProvider: $('#referredToProvider').val(),
+            reasonForReferral: $('#reasonForReferral').val(),
+            clientDiagnosis: $('#clientDiagnosis').val(),
+            clientStartDate: $('#clientStartDate').val(),
+            clientDOB: $('#clientDOB').val()
         };
         const jsonString = JSON.stringify(formData, null, 2);
         const blob = new Blob([jsonString], { type: 'application/json;charset=utf-8' });
@@ -197,6 +242,11 @@ $(document).ready(function() {
                 if (data.diagnosisCode) {
                     $('#diagnosisSelect').val(data.diagnosisCode).trigger('change');
                 }
+                $('#referredToProvider').val(data.referredToProvider);
+                $('#reasonForReferral').val(data.reasonForReferral);
+                $('#clientDiagnosis').val(data.clientDiagnosis);
+                $('#clientStartDate').val(data.clientStartDate);
+                $('#clientDOB').val(data.clientDOB);
             } catch (error) { console.error("Error parsing JSON file:", error); alert("Invalid JSON file."); }
         };
         reader.readAsText(file);
@@ -212,6 +262,9 @@ $(document).ready(function() {
     function fillTemplate(templateString, data) {
         return templateString.replace(/\[(.*?)\]/g, (match, placeholder) => {
             const key = placeholder.toUpperCase();
+            if ((key === 'START_DATE' || key === 'LICENSE_EXPIRATION' || key === 'CLIENT_DOB') && data[key] === 'Invalid Date') {
+                return '[DATE]';
+            }
             return data[key] !== undefined ? data[key] : match;
         });
     }

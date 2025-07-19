@@ -73,7 +73,7 @@ export default function Home() {
   // Organize tools for easier rendering
   const dayToDayTools = {
     available: [
-      { title: "Letter Generator", description: "Provides fillable templates for various professional letters such as Emotional Support Animal, Academic/Workplace Accommodation, and Referral Letters.", link: "/lettergenerator/index.html" },
+      { title: "Letter Generator", description: "Provides fillable templates for various professional letters such as Emotional Support Animal, Academic Accommodation, and Referral Letters.", link: "/lettergenerator/index.html" },
       { title: "Note Generator", description: "Offers fillable templates for various individual session note formats including general progress note, DAP, SOAP, and BIRP.", link: "/notegenerator/index.html" }
     ],
     comingSoon: [
