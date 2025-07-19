@@ -34,15 +34,7 @@
             <div class="mb-4">
                 <label for="noteTemplateSelect" class="block text-lg font-semibold text-sky-200 mb-2">Note Template:</label>
                 <select id="noteTemplateSelect" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
-                    <option value="generic">Generic Progress Note</option>
-                    <option value="dap">DAP Note</option>
-                    <option value="soap">SOAP Note</option>
-                    <option value="birp">BIRP Note</option>
-                    <option value="girp">GIRP Note</option>
-                    <option value="pirp">PIRP Note</option>
-                    <option value="narrative">Narrative Note</option>
-                    <option value="mse">Mental Status Exam (MSE)</option>
-                </select>
+                    </select>
             </div>
 
             <div id="common-fields" class="space-y-4">
@@ -139,6 +131,11 @@
             </div>
         </form>
         
+        <div id="sourcesContainer" class="mt-8 pt-6 border-t border-slate-700 hidden">
+            <h3 class="text-xl font-semibold text-sky-200 mb-4 text-center">Sources</h3>
+            <div id="sourcesList" class="text-sm text-sky-100 space-y-2 text-center"></div>
+        </div>
+
         <div class="text-center mt-8">
             <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="text-sky-300 hover:underline">
                 &uarr; Back to Top
