@@ -56,18 +56,21 @@ const CollapsibleSection = ({ title, items }: { title: string; items: { title: s
 
 
 export default function Home() {
+  // Create refs for each section to scroll to
   const dayToDayRef = useRef<HTMLDivElement>(null);
   const financeBusinessRef = useRef<HTMLDivElement>(null);
   const licensureRef = useRef<HTMLDivElement>(null);
   const startingPracticeRef = useRef<HTMLDivElement>(null);
   const miscellaneousRef = useRef<HTMLDivElement>(null);
 
+  // Helper function to scroll to a ref
   const scrollToSection = (ref: RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
+  // Organize tools for easier rendering
   const dayToDayTools = {
     available: [
       { title: "Letter Generator", description: "Provides fillable templates for various professional letters such as Emotional Support Animal, Academic Accommodation, and Referral Letters.", link: "/lettergenerator/index.html" },
@@ -76,6 +79,11 @@ export default function Home() {
     comingSoon: [
       { title: "Self-Care Dashboard", description: "Interactive tools for tracking self-care aspects like wellness check-ins and social connections." },
       { title: "Intake Note + Packet Generator", description: "A dynamic tool to generate a full intake packet including Informed Consent, HIPAA notices, and practice policies." },
+      { title: "Resource & Referral Database", description: "A pre-populated, static database of resources categorized by diagnosis, symptom, and treatment." },
+      { title: "Client Diagnosis (Cx Dx) Pie Chart Generator", description: "A client-side tool to generate a visual pie chart representation of the prevalence of different diagnoses in your practice." },
+      { title: "Treatment Plan Builder", description: "Generate treatment plan objectives and interventions based on diagnosis, theory, or symptoms. Includes a tool to assist in generating SMART goals." },
+      { title: "Assessment Database", description: "A static database of evidence-based assessments, categorized by diagnosis and symptom." },
+      { title: "Crisis Plan Generator", description: "Offers customizable, fillable crisis plan templates that can be completed and exported." }
     ]
   };
 
@@ -85,10 +93,11 @@ export default function Home() {
     ],
     comingSoon: [
         { title: "Business Tracking Tool & Financial Dashboard", description: "Tools and guidance for projecting revenue, managing estimated quarterly taxes, and tracking income and expenses." },
+        { title: "Business Information Management & Printable Pages", description: "A dedicated area to organize essential practice information like NPI, EIN, and license numbers." }
     ]
   };
 
-   const licensureTools = {
+  const licensureTools = {
     comingSoon: [
         { title: "CE Tracker", description: "A client-side log to manage Continuing Education credits. Track total hours and breakdowns by requirement." },
         { title: "Supervision Log (Both Associate & Supervisor)", description: "A dynamic interface to manage supervision logs for both supervisors and associates." }
@@ -150,39 +159,62 @@ export default function Home() {
             <div className="text-center">
               <h2 className="text-4xl font-extrabold text-sky-300 mb-4">Welcome to Your Therapist Toolkit!</h2>
               <p className="text-xl text-sky-100 max-w-3xl mx-auto">
-                A static web-based toolkit designed by a private practice clinician, for private practice clinicians.
+                A static web-based toolkit designed by a private practice clinician, for private practice clinicians. These tools help me manage my private practice with the confidence of knowing all my data stays local on my machine for security and HIPAA compliance.
               </p>
             </div>
           </section>
 
           <section id="day-to-day-operations" ref={dayToDayRef} className="py-16 border-b border-slate-700 mb-12">
             <h2 className="text-3xl font-bold text-sky-300 mb-6">Day-to-Day Operations</h2>
+            <p className="text-lg text-sky-100 mb-8">
+              Tools to help streamline clinical documentation, resource management, self-care updates, and client support.
+            </p>
             {dayToDayTools.available.map(tool => <ToolCard key={tool.title} {...tool} />)}
             <CollapsibleSection title="Future Tools" items={dayToDayTools.comingSoon} />
           </section>
 
           <section id="finance-and-business" ref={financeBusinessRef} className="py-16 border-b border-slate-700 mb-12">
             <h2 className="text-3xl font-bold text-sky-300 mb-6">Finance and Business</h2>
+            <p className="text-lg text-sky-100 mb-8">
+              Tools to help manage the financial aspects and general business information of your private practice.
+            </p>
             {financeBusinessTools.available.map(tool => <ToolCard key={tool.title} {...tool} />)}
             <CollapsibleSection title="Future Tools" items={financeBusinessTools.comingSoon} />
           </section>
 
-           <section id="licensure" ref={licensureRef} className="py-16 border-b border-slate-700 mb-12">
+          <section id="licensure" ref={licensureRef} className="py-16 border-b border-slate-700 mb-12">
             <h2 className="text-3xl font-bold text-sky-300 mb-6">Licensure</h2>
+            <p className="text-lg text-sky-100 mb-8">
+             Supports the ongoing maintenance of professional licensure and related requirements.
+            </p>
             <CollapsibleSection title="Future Tools" items={licensureTools.comingSoon} />
           </section>
 
           <section id="starting-practice" ref={startingPracticeRef} className="py-16 border-b border-slate-700 mb-12">
             <h2 className="text-3xl font-bold text-sky-300 mb-6">Starting Practice</h2>
+            <p className="text-lg text-sky-100 mb-8">
+              Foundational information and a detailed checklist for launching your private practice.
+            </p>
             <CollapsibleSection title="Future Tools" items={startingPracticeTools.comingSoon} />
           </section>
 
           <section id="miscellaneous" ref={miscellaneousRef} className="py-16 mb-12">
             <h2 className="text-3xl font-bold text-sky-300 mb-6">Miscellaneous</h2>
+            <p className="text-lg text-sky-100 mb-8">
+              General toolkit features, user interaction guidelines, and the core technical principles.
+            </p>
             <CollapsibleSection title="Future Tools" items={miscellaneousTools.comingSoon} />
           </section>
-
         </main>
+
+        <footer className="bg-indigo-950 p-4 text-sky-100 text-center">
+          <div className="container mx-auto">
+            <p>&copy; {new Date().getFullYear()} Therapist Toolkit. All rights reserved.</p>
+            <p className="text-sm mt-2">
+               This project is licensed under the MIT License.
+            </p>
+          </div>
+        </footer>
       </div>
     </>
   );
