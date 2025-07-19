@@ -1,0 +1,56 @@
+{
+  "templates": [
+    {
+      "id": "generic",
+      "name": "Generic Progress Note",
+      "citations": []
+    },
+    {
+      "id": "dap",
+      "name": "DAP Note",
+      "citations": [
+        "Cameron, S., & Turtle-song, I. (2002). Learning to write case notes using the SOAP format. <em>Journal of Counseling & Development, 80</em>(3), 286-292."
+      ]
+    },
+    {
+      "id": "soap",
+      "name": "SOAP Note",
+      "citations": [
+        "Weed, L. L. (1968). Medical records that guide and teach. <em>New England Journal of Medicine, 278</em>(11), 593-600."
+      ]
+    },
+    {
+      "id": "birp",
+      "name": "BIRP Note",
+      "citations": [
+        "Baird, B. N. (2016). <em>The internship, practicum, and field placement handbook: A guide for the helping professions</em> (8th ed.). Routledge."
+      ]
+    },
+    {
+      "id": "girp",
+      "name": "GIRP Note",
+      "citations": [
+        "Baird, B. N. (2016). <em>The internship, practicum, and field placement handbook: A guide for the helping professions</em> (8th ed.). Routledge."
+      ]
+    },
+    {
+      "id": "pirp",
+      "name": "PIRP Note",
+      "citations": [
+        "Baird, B. N. (2016). <em>The internship, practicum, and field placement handbook: A guide for the helping professions</em> (8th ed.). Routledge."
+      ]
+    },
+    {
+      "id": "narrative",
+      "name": "Narrative Note",
+      "citations": []
+    },
+    {
+      "id": "mse",
+      "name": "Mental Status Exam (MSE)",
+      "citations": [
+        "Trzepacz, P. T., & Baker, R. W. (1993). <em>The psychiatric mental status examination</em>. Oxford University Press."
+      ]
+    }
+  ]
+}

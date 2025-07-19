@@ -19,93 +19,123 @@
             </a>
         </div>
     </header>
+
     <div class="container mx-auto p-6 bg-slate-800 rounded-lg shadow-xl max-w-3xl w-full">
         <h1 class="text-4xl font-bold text-sky-300 text-center mb-6">Counseling Session Notes Generator</h1>
         
         <div class="flex flex-wrap justify-center gap-4 mb-6 border-b border-slate-700 pb-6">
-            <button type="button" id="importJsonButton" class="px-6 py-3 bg-orange-600 text-white font-semibold rounded-md shadow-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition duration-200">Import .json</button>
+            <button type="button" id="importJsonButton" class="px-6 py-3 bg-orange-600 text-white font-semibold rounded-md shadow-md hover:bg-orange-700">Import .json</button>
             <input type="file" id="importJsonFile" accept=".json" class="hidden">
-            <button type="reset" form="noteForm" class="px-6 py-3 bg-gray-600 text-white font-semibold rounded-md shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition duration-200">Clear Form</button>
+            <button type="reset" form="noteForm" class="px-6 py-3 bg-gray-600 text-white font-semibold rounded-md shadow-md hover:bg-gray-700">Clear Form</button>
         </div>
         
         <form id="noteForm" class="space-y-4">
+            
             <div class="mb-4">
-                <p class="text-lg font-semibold text-sky-200 mb-2">Session location:</p>
-                <div class="flex flex-wrap gap-4">
-                    <label class="inline-flex items-center">
-                        <input type="checkbox" name="location" value="in person" class="form-checkbox text-indigo-500 rounded-md focus:ring-indigo-500 h-5 w-5">
-                        <span class="ml-2 text-sky-100">In-person</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                        <input type="checkbox" name="location" value="via telehealth" class="form-checkbox text-indigo-500 rounded-md focus:ring-indigo-500 h-5 w-5">
-                        <span class="ml-2 text-sky-100">Via Telehealth</span>
-                    </label>
-                </div>
+                <label for="noteTemplateSelect" class="block text-lg font-semibold text-sky-200 mb-2">Note Template:</label>
+                <select id="noteTemplateSelect" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100">
+                    <option value="generic">Generic Progress Note</option>
+                    <option value="dap">DAP Note</option>
+                    <option value="soap">SOAP Note</option>
+                    <option value="birp">BIRP Note</option>
+                    <option value="girp">GIRP Note</option>
+                    <option value="pirp">PIRP Note</option>
+                    <option value="narrative">Narrative Note</option>
+                    <option value="mse">Mental Status Exam (MSE)</option>
+                </select>
             </div>
 
-            <div class="mb-4">
-                <p class="text-lg font-semibold text-sky-200 mb-2">Diagnosis Classification:</p>
-                <div class="flex flex-wrap gap-4">
-                    <label class="inline-flex items-center">
-                        <input type="radio" name="diagnosisClassification" value="ICD" class="form-radio text-indigo-500 rounded-md focus:ring-indigo-500 h-5 w-5">
-                        <span class="ml-2 text-sky-100">ICD</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                        <input type="radio" name="diagnosisClassification" value="DSM" class="form-radio text-indigo-500 rounded-md focus:ring-indigo-500 h-5 w-5">
-                        <span class="ml-2 text-sky-100">DSM</span>
-                    </label>
+            <div id="common-fields" class="space-y-4">
+                <div class="mb-4">
+                    <p class="text-lg font-semibold text-sky-200 mb-2">Session location:</p>
+                    <div class="flex flex-wrap gap-4">
+                        <label class="inline-flex items-center"><input type="checkbox" name="location" value="in person" class="form-checkbox text-indigo-500"><span class="ml-2">In-person</span></label>
+                        <label class="inline-flex items-center"><input type="checkbox" name="location" value="via telehealth" class="form-checkbox text-indigo-500"><span class="ml-2">Via Telehealth</span></label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="text-lg font-semibold text-sky-200 mb-2">Diagnosis Classification:</p>
+                    <div class="flex flex-wrap gap-4">
+                        <label class="inline-flex items-center"><input type="radio" name="diagnosisClassification" value="ICD" class="form-radio text-indigo-500"><span class="ml-2">ICD</span></label>
+                        <label class="inline-flex items-center"><input type="radio" name="diagnosisClassification" value="DSM" class="form-radio text-indigo-500"><span class="ml-2">DSM</span></label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="diagnosisSelect" class="block text-lg font-semibold text-sky-200 mb-2">Client's diagnosis:</label>
+                    <select id="diagnosisSelect" class="w-full" multiple="multiple" disabled></select>
+                    <p id="diagnosisSelectPlaceholder" class="text-sm text-gray-400 mt-1">Please select a classification first.</p>
+                </div>
+                <div class="mb-4">
+                    <label for="theorySelect" class="block text-lg font-semibold text-sky-200 mb-2">Clinical theory used:</label>
+                    <select id="theorySelect" class="w-full" multiple="multiple"></select>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div><label for="sessionDate" class="block text-lg font-semibold text-sky-200 mb-2">Session Date:</label><input type="date" id="sessionDate" class="w-full p-2 bg-gray-700 rounded-md"></div>
+                    <div><label for="sessionTime" class="block text-lg font-semibold text-sky-200 mb-2">Session Time:</label><input type="time" id="sessionTime" class="w-full p-2 bg-gray-700 rounded-md"></div>
+                    <div><label for="sessionLength" class="block text-lg font-semibold text-sky-200 mb-2">Session Length:</label><input type="text" id="sessionLength" placeholder="e.g., 50 minutes" class="w-full p-2 bg-gray-700 rounded-md"></div>
+                    <div><label for="clinicianInitials" class="block text-lg font-semibold text-sky-200 mb-2">Clinician's Initials:</label><input type="text" id="clinicianInitials" placeholder="e.g., ABC" class="w-full p-2 bg-gray-700 rounded-md"></div>
                 </div>
             </div>
+            
+            <hr class="border-slate-600 my-6">
 
-            <div class="mb-4">
-                <label for="diagnosisSelect" class="block text-lg font-semibold text-sky-200 mb-2">Client's diagnosis:</label>
-                <select id="diagnosisSelect" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500" multiple="multiple" disabled>
-                    </select>
-                <p id="diagnosisSelectPlaceholder" class="text-sm text-gray-400 mt-1">Please select a classification (ICD/DSM) first.</p>
-            </div>
-
-            <div class="mb-4">
-                <label for="theorySelect" class="block text-lg font-semibold text-sky-200 mb-2">Clinical theory used:</label>
-                <select id="theorySelect" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500" multiple="multiple">
-                    </select>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label for="sessionDate" class="block text-lg font-semibold text-sky-200 mb-2">Session Date:</label>
-                    <input type="date" id="sessionDate" name="sessionDate" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+            <div id="template-specific-fields-container">
+                <div id="generic-note-fields" class="note-template-section"><div class="mb-6"><label for="summary" class="block text-lg font-semibold text-sky-200 mb-2">Session Summary:</label><textarea id="summary" rows="5" class="w-full p-3 bg-gray-700 rounded-md" placeholder="The client discussed..."></textarea></div></div>
+                <div id="dap-note-fields" class="hidden note-template-section space-y-4">
+                    <div><label for="dap-data" class="block text-lg font-semibold text-sky-200 mb-2">Data:</label><textarea id="dap-data" rows="4" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Subjective and objective data..."></textarea></div>
+                    <div><label for="dap-assessment" class="block text-lg font-semibold text-sky-200 mb-2">Assessment:</label><textarea id="dap-assessment" rows="4" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Clinician's assessment..."></textarea></div>
+                    <div><label for="dap-plan" class="block text-lg font-semibold text-sky-200 mb-2">Plan:</label><textarea id="dap-plan" rows="4" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Treatment plan for next session..."></textarea></div>
                 </div>
-                <div>
-                    <label for="sessionTime" class="block text-lg font-semibold text-sky-200 mb-2">Session Time:</label>
-                    <input type="time" id="sessionTime" name="sessionTime" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                <div id="soap-note-fields" class="hidden note-template-section space-y-4">
+                    <div><label for="soap-subjective" class="block text-lg font-semibold text-sky-200 mb-2">Subjective:</label><textarea id="soap-subjective" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Client's subjective report..."></textarea></div>
+                    <div><label for="soap-objective" class="block text-lg font-semibold text-sky-200 mb-2">Objective:</label><textarea id="soap-objective" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Clinician's objective observations..."></textarea></div>
+                    <div><label for="soap-assessment" class="block text-lg font-semibold text-sky-200 mb-2">Assessment:</label><textarea id="soap-assessment" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Clinician's assessment..."></textarea></div>
+                    <div><label for="soap-plan" class="block text-lg font-semibold text-sky-200 mb-2">Plan:</label><textarea id="soap-plan" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Treatment plan..."></textarea></div>
                 </div>
-                <div>
-                    <label for="sessionLength" class="block text-lg font-semibold text-sky-200 mb-2">Session Length:</label>
-                    <input type="text" id="sessionLength" name="sessionLength" placeholder="e.g., 50 minutes" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                <div id="birp-note-fields" class="hidden note-template-section space-y-4">
+                    <div><label for="birp-behavior" class="block text-lg font-semibold text-sky-200 mb-2">Behavior:</label><textarea id="birp-behavior" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Client's presenting behavior..."></textarea></div>
+                    <div><label for="birp-intervention" class="block text-lg font-semibold text-sky-200 mb-2">Intervention:</label><textarea id="birp-intervention" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Clinician's interventions..."></textarea></div>
+                    <div><label for="birp-response" class="block text-lg font-semibold text-sky-200 mb-2">Response:</label><textarea id="birp-response" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Client's response to interventions..."></textarea></div>
+                    <div><label for="birp-plan" class="block text-lg font-semibold text-sky-200 mb-2">Plan:</label><textarea id="birp-plan" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Plan for future sessions..."></textarea></div>
                 </div>
-                <div>
-                    <label for="clinicianInitials" class="block text-lg font-semibold text-sky-200 mb-2">Clinician's Initials:</label>
-                    <input type="text" id="clinicianInitials" name="clinicianInitials" placeholder="e.g., ABC" class="w-full p-2 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500">
+                <div id="girp-note-fields" class="hidden note-template-section space-y-4">
+                    <div><label for="girp-goals" class="block text-lg font-semibold text-sky-200 mb-2">Goals:</label><textarea id="girp-goals" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Client's stated goals..."></textarea></div>
+                    <div><label for="girp-intervention" class="block text-lg font-semibold text-sky-200 mb-2">Intervention:</label><textarea id="girp-intervention" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Methods used to address goals..."></textarea></div>
+                    <div><label for="girp-response" class="block text-lg font-semibold text-sky-200 mb-2">Response:</label><textarea id="girp-response" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Client's response..."></textarea></div>
+                    <div><label for="girp-plan" class="block text-lg font-semibold text-sky-200 mb-2">Plan:</label><textarea id="girp-plan" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Next steps..."></textarea></div>
+                </div>
+                <div id="pirp-note-fields" class="hidden note-template-section space-y-4">
+                    <div><label for="pirp-problem" class="block text-lg font-semibold text-sky-200 mb-2">Problem:</label><textarea id="pirp-problem" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Presenting problem..."></textarea></div>
+                    <div><label for="pirp-intervention" class="block text-lg font-semibold text-sky-200 mb-2">Intervention:</label><textarea id="pirp-intervention" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Clinician's intervention..."></textarea></div>
+                    <div><label for="pirp-response" class="block text-lg font-semibold text-sky-200 mb-2">Response:</label><textarea id="pirp-response" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Client's response..."></textarea></div>
+                    <div><label for="pirp-plan" class="block text-lg font-semibold text-sky-200 mb-2">Plan:</label><textarea id="pirp-plan" rows="3" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Future plan..."></textarea></div>
+                </div>
+                <div id="narrative-note-fields" class="hidden note-template-section"><label for="narrative-summary" class="block text-lg font-semibold text-sky-200 mb-2">Session Narrative:</label><textarea id="narrative-summary" rows="10" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100" placeholder="Describe the session from beginning to end..."></textarea></div>
+                <div id="mse-note-fields" class="hidden note-template-section space-y-4">
+                    <div><label for="mse-appearance" class="block text-lg font-semibold text-sky-200 mb-2">Appearance:</label><textarea id="mse-appearance" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
+                    <div><label for="mse-behavior" class="block text-lg font-semibold text-sky-200 mb-2">Behavior/Psychomotor Activity:</label><textarea id="mse-behavior" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
+                    <div><label for="mse-attitude" class="block text-lg font-semibold text-sky-200 mb-2">Attitude toward Examiner:</label><textarea id="mse-attitude" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
+                    <div><label for="mse-affect" class="block text-lg font-semibold text-sky-200 mb-2">Affect and Mood:</label><textarea id="mse-affect" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
+                    <div><label for="mse-speech" class="block text-lg font-semibold text-sky-200 mb-2">Speech and Thought:</label><textarea id="mse-speech" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
+                    <div><label for="mse-perceptual" class="block text-lg font-semibold text-sky-200 mb-2">Perceptual Disturbances:</label><textarea id="mse-perceptual" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
+                    <div><label for="mse-orientation" class="block text-lg font-semibold text-sky-200 mb-2">Orientation and Consciousness:</label><textarea id="mse-orientation" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
+                    <div><label for="mse-memory" class="block text-lg font-semibold text-sky-200 mb-2">Memory and Intelligence:</label><textarea id="mse-memory" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
+                    <div><label for="mse-reliability" class="block text-lg font-semibold text-sky-200 mb-2">Reliability, Judgment, and Insight:</label><textarea id="mse-reliability" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
                 </div>
             </div>
-
-            <div class="mb-6">
-                <label for="summary" class="block text-lg font-semibold text-sky-200 mb-2">Session summary:</label>
-                <textarea name="summary" id="summary" rows="5" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100 focus:ring-indigo-500 focus:border-indigo-500" placeholder="The client discussed..."></textarea>
-            </div>
-
+            
             <div id="generatedNoteContainer" class="hidden bg-gray-700 p-4 rounded-md shadow-inner mb-6">
                 <h3 class="text-xl font-semibold text-sky-200 mb-2">Generated Note:</h3>
                 <p id="generatedNote" class="whitespace-pre-wrap text-sky-100"></p>
                 <div class="flex justify-center mt-4">
-                    <button type="button" id="copyNoteButton" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200">Copy Note</button>
+                    <button type="button" id="copyNoteButton" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700">Copy Note</button>
                 </div>
             </div>
 
             <div class="flex flex-wrap justify-center gap-4 mt-6 pt-6 border-t border-slate-700">
-                <button type="submit" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-200">Generate Note</button>
-                <button type="button" id="exportNoteButton" class="px-6 py-3 bg-emerald-600 text-white font-semibold rounded-md shadow-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition duration-200">Export Note (.txt)</button>
-                <button type="button" id="exportJsonButton" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-md shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition duration-200">Export as .json</button>
+                <button type="submit" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700">Generate Note</button>
+                <button type="button" id="exportNoteButton" class="px-6 py-3 bg-emerald-600 text-white font-semibold rounded-md shadow-md hover:bg-emerald-700">Export Note (.txt)</button>
+                <button type="button" id="exportJsonButton" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-md shadow-md hover:bg-purple-700">Export as .json</button>
             </div>
         </form>
         
