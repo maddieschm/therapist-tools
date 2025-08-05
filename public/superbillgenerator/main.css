@@ -242,36 +242,38 @@ textarea {
         box-shadow: none;
         margin: 0;
         padding: 0;
-        max-width: none; /* Allow content to expand to full print width */
+        max-width: none;
         border: none;
         background-color: #fff;
     }
 
     /* Hide specific UI elements that should not appear on the printed superbill */
+    header, /* Hide the main header and back to home button */
     h1, /* Main page title */
     #superbillHeader, /* Collapsible header for superbill generator */
     .collapsible-content > div.p-4.bg-slate-700, /* "How to Use This Section" div */
     #superbillForm, /* The entire input form */
     .collapsible-content > div.mt-8.pt-6.border-t, /* The "Printing Instructions" and "Export/Import Instructions" div */
-    #addNewClientButton, /* Hide individual buttons if they are outside #superbillForm */
+    #addSuperbillService, /* Hide the add service button */
     #printSuperbill,
     #exportSuperbillJsonButton,
     #importSuperbillJsonButton,
     #importSuperbillJsonFile,
-    button[type="reset"] {
-        display: none !important; /* Use !important to override any other display rules */
+    button[type="reset"],
+    .text-center.mt-8 > button /* The "Back to Top" button */ {
+        display: none !important;
     }
 
     /* Ensure the superbill output is fully visible and positioned correctly for printing */
     .superbill-output {
         display: block !important;
         visibility: visible !important;
-        position: static !important; /* Change from absolute to static for normal document flow */
-        width: auto !important; /* Allow width to be determined by print page */
+        position: static !important;
+        width: auto !important;
         left: auto !important;
         top: auto !important;
-        margin: 0 auto; /* Center the output horizontally if needed */
-        padding: 0; /* Reset padding for print layout */
+        margin: 0 auto;
+        padding: 0;
         box-shadow: none;
         background-color: #fff;
         color: #000;

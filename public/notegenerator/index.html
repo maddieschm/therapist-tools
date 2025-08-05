@@ -115,27 +115,26 @@
                     <div><label for="mse-reliability" class="block text-lg font-semibold text-sky-200 mb-2">Reliability, Judgment, and Insight:</label><textarea id="mse-reliability" rows="2" class="w-full p-3 border border-gray-600 rounded-md bg-gray-700 text-sky-100"></textarea></div>
                 </div>
             </div>
-            
+
             <div id="generatedNoteContainer" class="hidden bg-gray-700 p-4 rounded-md shadow-inner mb-6">
                 <h3 class="text-xl font-semibold text-sky-200 mb-2">Generated Note:</h3>
                 <p id="generatedNote" class="whitespace-pre-wrap text-sky-100"></p>
-                <div class="flex justify-center mt-4">
-                    <button type="button" id="copyNoteButton" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700">Copy Note</button>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap justify-center gap-4 mt-6 pt-6 border-t border-slate-700">
-                <button type="submit" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700">Generate Note</button>
-                <button type="button" id="exportNoteButton" class="px-6 py-3 bg-emerald-600 text-white font-semibold rounded-md shadow-md hover:bg-emerald-700">Export Note (.txt)</button>
-                <button type="button" id="exportJsonButton" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-md shadow-md hover:bg-purple-700">Export as .json</button>
             </div>
         </form>
         
+        <div id="form-action-buttons" class="flex flex-wrap justify-center gap-4 mt-6 pt-6 border-t border-slate-700">
+            <button type="submit" form="noteForm" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700">Generate Note</button>
+            <button type="button" id="copyNoteButton" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700">Copy Note</button>
+            <button type="button" id="printNoteButton" class="px-6 py-3 bg-emerald-600 text-white font-semibold rounded-md shadow-md hover:bg-emerald-700">Print Note</button>
+            <button type="button" id="exportNoteButton" class="px-6 py-3 bg-emerald-600 text-white font-semibold rounded-md shadow-md hover:bg-emerald-700">Export Note (.txt)</button>
+            <button type="button" id="exportJsonButton" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-md shadow-md hover:bg-purple-700">Export as .json</button>
+        </div>
+
         <div id="sourcesContainer" class="mt-8 pt-6 border-t border-slate-700 hidden">
             <h3 class="text-xl font-semibold text-sky-200 mb-4 text-center">Sources</h3>
             <div id="sourcesList" class="text-sm text-sky-100 space-y-2 text-center"></div>
         </div>
-
+        
         <div class="text-center mt-8">
             <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="text-sky-300 hover:underline">
                 &uarr; Back to Top

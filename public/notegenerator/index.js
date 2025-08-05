@@ -150,12 +150,49 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: $('#generatedNoteContainer').offset().top }, 500);
     });
 
-    // Your existing Export, Import, Copy, and Clear functions
+    $('#copyNoteButton').on('click', function() {
+        const generatedNote = $('#generatedNote').text();
+        if (generatedNote) {
+            navigator.clipboard.writeText(generatedNote).then(() => {
+                alert("Note copied to clipboard!");
+            }).catch(err => {
+                console.error('Failed to copy note: ', err);
+                alert("Failed to copy the note. Please try again or copy manually.");
+            });
+        } else {
+            alert("There is no note to copy.");
+        }
+    });
+
+    $('#printNoteButton').on('click', function() {
+        const noteContent = $('#generatedNote').text();
+        if (!noteContent) {
+            alert("Please generate a note first.");
+            return;
+        }
     
+        const printWindow = window.open('', '_blank');
+        const noteHeading = $('#generatedNoteContainer h3').text();
+        
+        // Temporarily change the heading for printing
+        $('#generatedNoteContainer h3').text('Progress Note:');
+
+        printWindow.document.write('<!DOCTYPE html><html><head><title>Progress Note</title><style>body{font-family:Georgia,Times,"Times New Roman",serif;line-height:1.6;margin:0;padding:1in}h3{font-size:1.2em;margin-bottom:1em}p{margin:0 0 1em 0;white-space:pre-wrap}</style></head><body>');
+        printWindow.document.write(document.getElementById('generatedNoteContainer').innerHTML);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+        
+        setTimeout(() => {
+            printWindow.print();
+            printWindow.close();
+            // Change the heading back after printing
+            $('#generatedNoteContainer h3').text(noteHeading);
+        }, 250);
+    });
+
     $('#exportNoteButton').on('click', function() { /* ... */ });
     $('#exportJsonButton').on('click', function() { /* ... */ });
     $('#importJsonButton').on('click', function() { /* ... */ });
     $('#importJsonFile').on('change', function(event) { /* ... */ });
-    $('#copyNoteButton').on('click', function() { /* ... */ });
     $('#noteForm').on('reset', function() { /* ... */ });
 });
