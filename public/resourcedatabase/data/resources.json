@@ -167,22 +167,22 @@
   {
     "title": "ADHD Overview for Adults",
     "url": "https://www.therapistaid.com/therapy-worksheet/what-is-adhd",
-    "description": "An overview of how ADHD affects adults, covering symptoms of inattention and hyperactivity, the biological basis of the disorder, and treatment options.",
+    "description": "A psychoeducational handout explaining the symptoms, causes, and treatment options for Adult ADHD.",
     "audience": ["Adults"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
     "features": ["Free", "Printable"],
     "topics": {
       "diagnosis": ["ADHD"],
-      "symptom": ["Executive Dysfunction", "Inattention", "Hyperactivity"],
-      "therapyStyle": []
+      "symptom": ["Inattention", "Hyperactivity", "Executive Dysfunction"],
+      "therapyStyle": ["Psychoeducation"]
     },
     "citation": "Therapist Aid. (n.d.). *What is ADHD?*. Retrieved from https://www.therapistaid.com/therapy-worksheet/what-is-adhd"
   },
   {
     "title": "ADHD Overview for Teens",
     "url": "https://www.therapistaid.com/therapy-worksheet/adhd-info-for-teens",
-    "description": "A guide for teenagers on the signs of ADHD, including inattention (e.g., mind wandering) and hyperactivity (e.g., fidgeting).",
+    "description": "A handout for teenagers explaining the signs of ADHD, including challenges with focus, hyperactivity, and impulsivity, as well as facts and treatment information.",
     "audience": ["Teens", "Parents"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -190,21 +190,21 @@
     "topics": {
       "diagnosis": ["ADHD"],
       "symptom": ["Inattention", "Hyperactivity", "School Issues"],
-      "therapyStyle": []
+      "therapyStyle": ["Psychoeducation"]
     },
     "citation": "Therapist Aid. (n.d.). *ADHD info for teens*. Retrieved from https://www.therapistaid.com/therapy-worksheet/adhd-info-for-teens"
   },
   {
     "title": "Class Assignments Tracker",
     "url": "https://docs.google.com/spreadsheets/d/1D0vCugkCUBTiNNvMzULJxL6crfL7BZ0EhU7Nsqbd30U/edit?usp=sharing",
-    "description": "A spreadsheet for tracking weekly readings and assignments for various courses, adaptable for personal use.",
+    "description": "A customizable spreadsheet to help students organize and track their weekly readings and assignments for multiple courses.",
     "audience": ["Teens", "Adults"],
     "format": "Spreadsheet",
     "language": ["English"],
     "features": ["Free", "Interactive", "Printable"],
     "topics": {
       "diagnosis": ["ADHD"],
-      "symptom": ["Executive Dysfunction", "Organization"],
+      "symptom": ["Executive Dysfunction", "Organization", "School Issues"],
       "therapyStyle": ["Coping Skills"]
     },
     "citation": "Therapist Toolkit. (n.d.). *Class assignments tracker* [Google Sheet]."
@@ -212,7 +212,7 @@
   {
     "title": "Breaking Down Large Goals",
     "url": "https://www.therapistaid.com/therapy-worksheet/goal-breakdown",
-    "description": "A worksheet that teaches how to break down large, overwhelming goals into smaller, manageable tasks. It provides tips like limiting tasks to one hour and scheduling them.",
+    "description": "A worksheet that guides users through the process of breaking large, overwhelming goals into smaller, actionable steps to combat procrastination.",
     "audience": ["Adults", "Teens"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -227,7 +227,7 @@
   {
     "title": "Children's ADHD Skill Packet",
     "url": "https://www.therapistaid.com/therapy-worksheet/adhd-kangaroo-packet",
-    "description": "A resource packet for children with skills like 'Ocean Breathing' for calming down, creating daily routines, and a 4-step guide to problem-solving for challenges like losing homework.",
+    "description": "A kid-friendly packet of worksheets with activities for managing ADHD symptoms, including breathing exercises, problem-solving, and creating routines.",
     "audience": ["Children", "Parents"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -242,7 +242,7 @@
   {
     "title": "Tips for ADHD Management",
     "url": "https://www.therapistaid.com/therapy-worksheet/managing-adhd",
-    "description": "A guide on managing ADHD symptoms through creating structure, setting aside time for relationships, staying organized with to-do lists, tailoring your environment, and maintaining a healthy lifestyle.",
+    "description": "A psychoeducational handout offering strategies for managing Adult ADHD, including creating structure, improving relationships, and staying organized.",
     "audience": ["Adults"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -250,14 +250,14 @@
     "topics": {
       "diagnosis": ["ADHD"],
       "symptom": ["Executive Dysfunction", "Organization", "Relationship Issues"],
-      "therapyStyle": ["Coping Skills"]
+      "therapyStyle": ["Coping Skills", "Psychoeducation"]
     },
     "citation": "Therapist Aid. (n.d.). *Managing ADHD*. Retrieved from https://www.therapistaid.com/therapy-worksheet/managing-adhd"
   },
   {
     "title": "Anxiety Coping Skills",
     "url": "https://www.therapistaid.com/therapy-worksheet/coping-skills-anxiety",
-    "description": "A worksheet with techniques for managing anxiety, including deep breathing, progressive muscle relaxation, challenging irrational thoughts, and guided imagery.",
+    "description": "A worksheet providing a variety of techniques for managing anxiety, such as deep breathing, grounding, and cognitive reframing.",
     "audience": ["Adults", "Teens"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -421,23 +421,23 @@
   },
   {
     "title": "Decision Making Strategies",
-    "url": "/files/Decision-Making-Strategies.pdf",
-    "description": "An overview of various decision-making models, including a 7-step process, ethical frameworks (consequentialism, deontology), and the RAID model for categorizing decisions.",
+    "url": "https://docs.google.com/document/d/1DE0gv6Buhaq8wObK8EFodCclDcFQGC7nETuBVEOOu8Y/edit?usp=sharing",
+    "description": "An overview of various decision-making models, including a 7-step process, ethical frameworks, and the RAID model for categorizing decisions.",
     "audience": ["Adults", "Clinicians"],
     "format": "Article",
     "language": ["English"],
     "features": ["Free"],
     "topics": {
       "diagnosis": [],
-      "symptom": ["Decision Making"],
+      "symptom": ["Decision Making", "Executive Dysfunction"],
       "therapyStyle": ["CBT", "Psychoeducation"]
     },
     "citation": "Therapist Toolkit. (n.d.). *Decision making strategies* [Google Doc]."
   },
   {
     "title": "Focusing Options & Sleepiness Tracking",
-    "url": "/files/Focusing-Options-and-Sleepiness-Tracking.pdf",
-    "description": "A list of strategies to improve focus by managing sleepiness and engaging in motor skills or stimulating activities, including a log for tracking patterns of tiredness.",
+    "url": "https://docs.google.com/document/d/1YCSi9l-xQCTqHBExpK-MuujG7YAj4mlgI6xe1DYF-tc/edit?usp=sharing",
+    "description": "A worksheet with strategies to improve focus by managing sleepiness and engaging in stimulating activities, including a log for tracking tiredness patterns.",
     "audience": ["Adults", "Teens"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -452,9 +452,9 @@
   {
     "title": "Emotional Regulation Cheat Sheet",
     "url": "https://www.scribd.com/presentation/741900953/Emotion-Regulation-Workshop",
-    "description": "A cheat sheet outlining six useful emotional regulation skills: Self-Awareness, Mindful Awareness, Cognitive Reappraisal, Adaptability, Self-Compassion, and Emotional Support.",
+    "description": "A presentation outlining six key emotional regulation skills: Self-Awareness, Mindful Awareness, Cognitive Reappraisal, Adaptability, Self-Compassion, and Emotional Support.",
     "audience": ["Adults", "Teens"],
-    "format": "Article",
+    "format": "Presentation",
     "language": ["English"],
     "features": ["Free"],
     "topics": {
@@ -466,8 +466,8 @@
   },
   {
     "title": "Grounding Techniques",
-    "url": "/files/Grounding-Techniques.pdf",
-    "description": "A list of grounding techniques to help manage anxiety and dissociation by reconnecting with the present moment through sensory experiences.",
+    "url": "https://docs.google.com/document/d/1eL9Vd1PSXTb83cr1oaVnPDJ6NFEVBZQgwQgVmrmWw7s/edit?usp=sharing",
+    "description": "A list of mental and physical grounding techniques to help manage anxiety and dissociation by reconnecting with the present moment through the five senses.",
     "audience": ["Adults", "Teens"],
     "format": "Article",
     "language": ["English"],
@@ -475,29 +475,29 @@
     "topics": {
         "diagnosis": ["Anxiety Disorders", "PTSD", "Dissociative Disorders"],
         "symptom": ["Anxiety", "Dissociation", "Panic", "Trauma"],
-        "therapyStyle": ["Grounding", "Coping Skills"]
+        "therapyStyle": ["Grounding", "Coping Skills", "Somatic"]
     },
     "citation": "Therapist Toolkit. (n.d.). *Grounding techniques* [Google Doc]."
   },
   {
     "title": "Wellness Check-In",
-    "url": "/files/Wellness-Check-in.pdf",
-    "description": "A guide defining eight dimensions of wellness (Emotional, Social, Environmental, Physical, Intellectual, Spiritual, Professional, Financial) with examples for self-reflection.",
+    "url": "https://docs.google.com/document/d/1Mifldd7C4uXdnDwNrlfnagoyCdP3kpIh1Bi5OAdRrV0/edit?usp=sharing",
+    "description": "A guide defining eight dimensions of wellness (Emotional, Social, Environmental, Physical, Intellectual, Spiritual, Professional, Financial) for self-reflection.",
     "audience": ["Adults", "Teens"],
     "format": "Article",
     "language": ["English"],
     "features": ["Free", "Self-Assessment"],
     "topics": {
         "diagnosis": [],
-        "symptom": ["Self-Care", "Burnout"],
+        "symptom": ["Self-Care", "Burnout", "Wellness"],
         "therapyStyle": ["Psychoeducation"]
     },
     "citation": "Therapist Toolkit. (n.d.). *Wellness check-in* [Google Doc]."
   },
   {
     "title": "Controlling Cognitive Distortions",
-    "url": "/files/Controlling-Cognitive-Distortions.pdf",
-    "description": "A 4-step guide to help recognize, challenge, and gain control over negative thoughts and cognitive distortions that contribute to stress and depression.",
+    "url": "https://docs.google.com/document/d/1RneU_HKBLD2Fhwk8dbEIHb8FKLwXMrCh3niRI19jn3M/edit?usp=sharing",
+    "description": "A 4-step guide to help recognize, challenge, and reframe negative thoughts and cognitive distortions that contribute to stress and depression.",
     "audience": ["Adults", "Teens"],
     "format": "Article",
     "language": ["English"],
@@ -519,7 +519,7 @@
     "features": ["Free", "Printable"],
     "topics": {
         "diagnosis": [],
-        "symptom": ["Depression", "Self-Esteem"],
+        "symptom": ["Depression", "Self-Esteem", "Gratitude"],
         "therapyStyle": ["Positive Psychology"]
     },
     "citation": "Therapist Aid. (n.d.). *Positive psychology prompt cards*. Retrieved from https://www.therapistaid.com/therapy-worksheet/positive-psychology-prompt-cards"
@@ -527,7 +527,7 @@
   {
     "title": "What is Imposter Syndrome?",
     "url": "https://www.therapistaid.com/therapy-worksheet/imposter-syndrome",
-    "description": "A worksheet defining imposter syndrome, its common traits, consequences, and risk factors, especially among high-achieving individuals.",
+    "description": "A worksheet defining imposter syndrome, its common traits, and the cycle of anxiety and fear associated with it.",
     "audience": ["Adults"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -542,7 +542,7 @@
   {
     "title": "My Strengths and Qualities",
     "url": "https://www.therapistaid.com/therapy-worksheet/my-strengths-and-qualities",
-    "description": "A worksheet with prompts to help individuals identify and reflect upon their personal strengths, qualities, accomplishments, and values.",
+    "description": "A worksheet with prompts to help individuals identify and reflect on their personal strengths, qualities, accomplishments, and values.",
     "audience": ["Adults", "Teens"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -557,7 +557,7 @@
   {
     "title": "Positive Traits List",
     "url": "https://www.therapistaid.com/therapy-worksheet/positive-traits",
-    "description": "A comprehensive list of positive character traits to help individuals identify their own strengths and positive qualities.",
+    "description": "A comprehensive list of positive character traits to help individuals identify their own strengths and build self-esteem.",
     "audience": ["Adults", "Teens", "Children"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -579,7 +579,7 @@
     "features": ["Free", "Printable", "Journaling"],
     "topics": {
         "diagnosis": ["Depression"],
-        "symptom": ["Self-Esteem", "Depression"],
+        "symptom": ["Self-Esteem", "Depression", "Gratitude"],
         "therapyStyle": ["Positive Psychology", "Journaling"]
     },
     "citation": "Therapist Aid. (n.d.). *Self-esteem journal*. Retrieved from https://www.therapistaid.com/therapy-worksheet/self-esteem-journal"
@@ -587,7 +587,7 @@
   {
     "title": "Strengths Exploration",
     "url": "https://www.therapistaid.com/therapy-worksheet/strengths-exploration",
-    "description": "A multi-page worksheet designed to help individuals identify their core strengths and explore how to apply them in relationships, their profession, and for personal fulfillment.",
+    "description": "A worksheet designed to help individuals identify their core strengths and explore how to apply them in relationships, their profession, and for personal fulfillment.",
     "audience": ["Adults", "Teens"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
@@ -631,9 +631,9 @@
   },
   {
     "title": "Venn Diagram - ADHD, Autism & PTSD",
-    "url": "/files/Venn-Diagram-ADHD-Autism-PTSD.pdf",
-    "description": "A Venn diagram illustrating the complex symptom overlap between ADHD, Autism, and PTSD.",
-    "audience": ["Clinicians", "Adults"],
+    "url": "https://www.reddit.com/r/AutismTraumaSurvivors/comments/z9bp93/a_venn_diagram_detailing_how_autism_ptsd_and_adhd/",
+    "description": "A Venn diagram illustrating the complex symptom overlap between ADHD, Autism, and PTSD, created by a Reddit user.",
+    "audience": ["Adults", "Peers"],
     "format": "Venn Diagram",
     "language": ["English"],
     "features": ["Free", "Printable"],
@@ -642,12 +642,12 @@
       "symptom": ["Trauma", "Hypervigilance", "Executive Dysfunction"],
       "therapyStyle": ["Psychoeducation"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Venn Diagram - ADHD, Autism & PTSD* [PDF]."
+    "citation": "u/your-real-mom. (2022, November 30). *A Venn diagram detailing how autism, PTSD, and ADHD interact*. Reddit. Retrieved from https://www.reddit.com/r/AutismTraumaSurvivors/comments/z9bp93/a_venn_diagram_detailing_how_autism_ptsd_and_adhd/"
   },
   {
     "title": "Venn Diagram - ADHD, Autism & OCD",
-    "url": "/files/Venn-Diagram-ADHD-Autism-OCD.pdf",
-    "description": "A Venn diagram comparing the traits of ADHD, Autism, and OCD, highlighting areas of convergence.",
+    "url": "https://neurodivergentinsights.com/adhd-vs-autism-vs-ocd/",
+    "description": "A Venn diagram comparing the traits of ADHD, Autism, and OCD, highlighting areas of convergence and distinction.",
     "audience": ["Clinicians", "Adults"],
     "format": "Venn Diagram",
     "language": ["English"],
@@ -657,11 +657,11 @@
       "symptom": ["Obsessive Thoughts", "Repetitive Behaviors", "Executive Dysfunction"],
       "therapyStyle": ["Psychoeducation"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Venn Diagram - ADHD, Autism & OCD* [PDF]."
+    "citation": "Neurodivergent Insights. (n.d.). *ADHD vs. Autism vs. OCD*. Retrieved from https://neurodivergentinsights.com/adhd-vs-autism-vs-ocd/"
   },
   {
     "title": "Venn Diagram - ADHD & Anxiety",
-    "url": "/files/Venn-Diagram-ADHD-Anxiety.pdf",
+    "url": "https://neurodivergentinsights.com/adhdvsanxiety/",
     "description": "A Venn diagram showing the shared and distinct symptoms of ADHD and Anxiety.",
     "audience": ["Clinicians", "Adults"],
     "format": "Venn Diagram",
@@ -672,12 +672,12 @@
       "symptom": ["Anxiety", "Worry", "Inattention"],
       "therapyStyle": ["Psychoeducation"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Venn Diagram - ADHD & Anxiety* [PDF]."
+    "citation": "Neurodivergent Insights. (n.d.). *ADHD vs. Anxiety*. Retrieved from https://neurodivergentinsights.com/adhdvsanxiety/"
   },
     {
     "title": "Venn Diagram - ADHD & BPD",
     "url": "https://neurodivergentinsights.com/misdiagnosis-monday/adhd-and-bpd",
-    "description": "A Venn diagram illustrating the overlapping and distinct traits of ADHD and BPD.",
+    "description": "A Venn diagram illustrating the overlapping and distinct traits of ADHD and Borderline Personality Disorder (BPD).",
     "audience": ["Clinicians", "Adults"],
     "format": "Venn Diagram",
     "language": ["English"],
@@ -691,8 +691,8 @@
   },
   {
     "title": "Autism Masking & Stereotypes",
-    "url": "/files/Autism-Masking-Stereotypes.pdf",
-    "description": "An infographic exploring the concept of autistic masking and breaking down common stereotypes.",
+    "url": "https://neurodivergentinsights.com/autism-in-adulthood/",
+    "description": "An infographic exploring the concept of autistic masking, its impact, and the breakdown of common stereotypes about autism.",
     "audience": ["Adults", "Teens", "Clinicians", "Parents"],
     "format": "Infographic",
     "language": ["English"],
@@ -702,7 +702,7 @@
       "symptom": ["Masking", "Social Skills", "Stigma"],
       "therapyStyle": ["Psychoeducation"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Autism masking & stereotypes* [PDF]."
+    "citation": "Neurodivergent Insights. (n.d.). *Autism in adulthood*. Retrieved from https://neurodivergentinsights.com/autism-in-adulthood/"
   },
   {
     "title": "Why are autistic people always misunderstood?",
@@ -960,9 +960,9 @@
     "citation": "ACT with Compassion. (n.d.). *Helping people who are highly self-critical benefit from feedback*. Retrieved from https://www.actwithcompassion.com/helping-people-who-are-highly-self-critical-benefit-from-feedback"
   },
   {
-    "title": "How to Use Theories in Clinical Practice",
-    "url": "/files/How-to-Use-Theories-in-Clinical-Practice.pdf",
-    "description": "A guide for clinicians on the practical application of therapeutic theories, including case conceptualization, intervention selection, and fostering the therapeutic relationship.",
+    "title": "Adlerian Cheat Sheet",
+    "url": "https://docs.google.com/document/d/1LHtycf57CMzOb0NooR47FEM6X9QqOePO/edit?usp=sharing",
+    "description": "A cheat sheet summarizing the core tenets of Adlerian therapy, including concepts like inferiority/superiority, social interest, and birth order.",
     "audience": ["Clinicians"],
     "format": "Article (Google Doc)",
     "language": ["English"],
@@ -970,14 +970,14 @@
     "topics": {
       "diagnosis": [],
       "symptom": [],
-      "therapyStyle": ["Case Conceptualization", "Intervention"]
+      "therapyStyle": ["Adlerian", "Psychoanalytic"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *How to use theories in clinical practice* [Google Doc]."
+    "citation": "Therapist Toolkit. (n.d.). *Adlerian cheat sheet* [Google Doc]."
   },
   {
-    "title": "Art Therapy Theory",
-    "url": "/files/Art-Therapy-Theory.pdf",
-    "description": "An overview of Art Therapy, detailing its history, key principles, how it works, and its applications for various populations and mental health conditions.",
+    "title": "Behavioral Therapy Cheat Sheet",
+    "url": "https://docs.google.com/document/d/1uaNeb4bijf5s9SNUyhOFcG5mRTi7gfIf/edit?usp=sharing",
+    "description": "A summary of key principles and techniques in Behavioral Therapy, focusing on classical and operant conditioning, reinforcement, and shaping.",
     "audience": ["Clinicians"],
     "format": "Article (Google Doc)",
     "language": ["English"],
@@ -985,89 +985,89 @@
     "topics": {
       "diagnosis": [],
       "symptom": [],
-      "therapyStyle": ["Art Therapy"]
+      "therapyStyle": ["Behavioral", "CBT"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Art therapy theory* [Google Doc]."
+    "citation": "Therapist Toolkit. (n.d.). *Behavioral therapy cheat sheet* [Google Doc]."
   },
   {
-    "title": "Existential Therapy Overview",
-    "url": "/files/Existential-Therapy.pdf",
-    "description": "A handout from Therapist Aid explaining the core concepts of Existential Therapy, including the search for meaning, self-awareness, and facing existential anxieties.",
+    "title": "CBT Triangle",
+    "url": "https://drive.google.com/file/d/1foGtA2Gkp8TD8rFfmAOC0DjpE-IHCtEX/view?usp=sharing",
+    "description": "A visual handout illustrating the core of Cognitive Behavioral Therapy: the interconnected relationship between thoughts, feelings, and behaviors.",
     "audience": ["Clinicians", "Adults"],
     "format": "Worksheet (PDF)",
     "language": ["English"],
     "features": ["Free", "Printable"],
     "topics": {
       "diagnosis": [],
-      "symptom": ["Purpose", "Existential Dread", "Anxiety"],
-      "therapyStyle": ["Existential"]
+      "symptom": ["Negative Thoughts"],
+      "therapyStyle": ["CBT", "Cognitive Triangle"]
     },
-    "citation": "Therapist Aid. (n.d.). *Existential therapy* [PDF]. Retrieved from Therapist Aid."
+    "citation": "Therapist Aid. (n.d.). *CBT triangle* [PDF]. Retrieved from Therapist Aid."
   },
   {
-    "title": "Internal Family Systems (IFS) Overview",
-    "url": "/files/IFS-Overview.pdf",
-    "description": "A comprehensive guide to the Internal Family Systems model, detailing the concepts of Self, Exiles, Managers, and Firefighters.",
+    "title": "Cognitive Therapy Cheat Sheet",
+    "url": "https://docs.google.com/document/d/18infbroNGeFqIbAlQoySKQK2HOo5AVt8/edit?usp=sharing",
+    "description": "A cheat sheet for clinicians on Cognitive Therapy, detailing cognitive distortions, Socratic questioning, and thought records.",
     "audience": ["Clinicians"],
     "format": "Article (Google Doc)",
     "language": ["English"],
     "features": ["Free"],
     "topics": {
       "diagnosis": [],
-      "symptom": ["Self-Concept", "Inner Critic"],
-      "therapyStyle": ["IFS"]
+      "symptom": ["Negative Thoughts", "Cognitive Distortions"],
+      "therapyStyle": ["CBT", "Cognitive Therapy"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Internal Family Systems (IFS) overview* [Google Doc]."
+    "citation": "Therapist Toolkit. (n.d.). *Cognitive therapy cheat sheet* [Google Doc]."
   },
   {
-    "title": "Introduction to Polyvagal Theory",
-    "url": "/files/Polyvagal-Theory-Introduction.pdf",
-    "description": "An introductory guide to Polyvagal Theory, explaining the roles of the ventral vagal, sympathetic, and dorsal vagal systems in emotional and physiological states.",
+    "title": "Feminist and Multicultural Therapy",
+    "url": "https://docs.google.com/document/d/15kzBQGXv28sYmpl7iYyA2HtAPny8esFl/edit?usp=sharing",
+    "description": "An overview of Feminist and Multicultural therapeutic approaches, emphasizing social justice, intersectionality, and empowerment.",
     "audience": ["Clinicians"],
     "format": "Article (Google Doc)",
     "language": ["English"],
     "features": ["Free"],
     "topics": {
       "diagnosis": [],
-      "symptom": ["Anxiety", "Trauma", "Emotional Dysregulation"],
-      "therapyStyle": ["Polyvagal Theory", "Somatic"]
+      "symptom": ["Oppression", "Identity"],
+      "therapyStyle": ["Feminist", "Multicultural"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Introduction to Polyvagal Theory* [Google Doc]."
+    "citation": "Therapist Toolkit. (n.d.). *Feminist and multicultural therapy* [Google Doc]."
   },
   {
-    "title": "The Four Stages of Competence",
-    "url": "/files/The-Four-Stages-of-Competence.pdf",
-    "description": "A handout explaining the four stages of learning a new skill: Unconscious Incompetence, Conscious Incompetence, Conscious Competence, and Unconscious Competence.",
-    "audience": ["Clinicians", "Adults"],
-    "format": "Article (Google Doc)",
-    "language": ["English"],
-    "features": ["Free"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Learning", "Skill Development"],
-      "therapyStyle": ["Psychoeducation"]
-    },
-    "citation": "Therapist Toolkit. (n.d.). *The four stages of competence* [Google Doc]."
-  },
-  {
-    "title": "Relational Cultural Theory (RCT) Overview",
-    "url": "/files/Relational-Cultural-Theory.pdf",
-    "description": "An introduction to Relational Cultural Theory, which posits that human connection and relational growth are central to psychological well-being.",
+    "title": "Counseling Theories Cheat Sheet Breakdown",
+    "url": "https://docs.google.com/document/d/1pFI4-JeQvx_ztECcfgjyxZ3F-RgBxK73/edit?usp=sharing",
+    "description": "A comparative breakdown of various major counseling theories for clinicians, outlining key concepts, goals, and interventions for each.",
     "audience": ["Clinicians"],
     "format": "Article (Google Doc)",
     "language": ["English"],
     "features": ["Free"],
     "topics": {
       "diagnosis": [],
-      "symptom": ["Relationship Issues", "Social Connection"],
-      "therapyStyle": ["Relational Cultural Theory", "Feminist"]
+      "symptom": [],
+      "therapyStyle": ["Psychoeducation", "Case Conceptualization"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Relational Cultural Theory (RCT) overview* [Google Doc]."
+    "citation": "Therapist Toolkit. (n.d.). *Counseling theories cheat sheet breakdown* [Google Doc]."
   },
   {
-    "title": "Solution-Focused Brief Therapy (SFBT) Guide",
-    "url": "/files/SFBT-Guide.pdf",
-    "description": "A presentation outlining the principles and techniques of Solution-Focused Brief Therapy, including the 'Miracle Question' and focusing on client strengths.",
+    "title": "Jungian Therapy Cheat Sheet",
+    "url": "https://docs.google.com/document/d/11V1FxW6lnFmSJQjLPcBhUd-FGXoq79YS/edit?usp=sharing",
+    "description": "A summary of Jungian therapy concepts, including archetypes, the collective unconscious, individuation, and dream analysis.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Spirituality", "Self-Concept"],
+      "therapyStyle": ["Jungian", "Psychoanalytic"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Jungian therapy cheat sheet* [Google Doc]."
+  },
+  {
+    "title": "Neo-Psychoanalytic Theory Overview",
+    "url": "https://docs.google.com/presentation/d/1P47CoeIjYb3EEvelAFJkKa00MSmRZIVA/edit?usp=sharing",
+    "description": "A presentation outlining the key figures and concepts of Neo-Psychoanalytic theory, moving beyond Freud to include theorists like Jung, Adler, and Horney.",
     "audience": ["Clinicians"],
     "format": "Presentation",
     "language": ["English"],
@@ -1075,233 +1075,53 @@
     "topics": {
       "diagnosis": [],
       "symptom": [],
-      "therapyStyle": ["SFBT"]
+      "therapyStyle": ["Psychoanalytic", "Psychodynamic"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Solution-Focused Brief Therapy (SFBT) guide* [Google Slides]."
+    "citation": "Therapist Toolkit. (n.d.). *Neo-Psychoanalytic theory overview* [Google Slides]."
   },
   {
-    "title": "Somatic Experiencing Overview",
-    "url": "/files/Somatic-Experiencing-Overview.pdf",
-    "description": "A guide to Somatic Experiencing, a body-focused therapy aimed at relieving the symptoms of trauma and stress by focusing on the client's perceived body sensations.",
-    "audience": ["Clinicians"],
-    "format": "Article (Google Doc)",
-    "language": ["English"],
-    "features": ["Free"],
-    "topics": {
-      "diagnosis": ["PTSD"],
-      "symptom": ["Trauma", "Anxiety", "Stress"],
-      "therapyStyle": ["Somatic Experiencing", "Somatic"]
-    },
-    "citation": "Therapist Toolkit. (n.d.). *Somatic Experiencing overview* [Google Doc]."
-  },
-  {
-    "title": "Structural Family Therapy Overview",
-    "url": "/files/Structural-Family-Therapy.pdf",
-    "description": "An introduction to Structural Family Therapy, focusing on family structures, subsystems, and boundaries as a way to resolve problems.",
+    "title": "Psychoanalysis Cheat Sheet",
+    "url": "https://docs.google.com/document/d/12Qxk9G6arLnq3oEx-J7aNjyoh95MwwrT/edit?usp=sharing",
+    "description": "A cheat sheet for clinicians on Freudian psychoanalysis, covering concepts like the id, ego, superego, defense mechanisms, and transference.",
     "audience": ["Clinicians"],
     "format": "Article (Google Doc)",
     "language": ["English"],
     "features": ["Free"],
     "topics": {
       "diagnosis": [],
-      "symptom": ["Family Conflict", "Relationship Issues"],
-      "therapyStyle": ["Structural Family Therapy", "Family Systems"]
+      "symptom": [],
+      "therapyStyle": ["Psychoanalytic", "Psychodynamic"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Structural Family Therapy overview* [Google Doc]."
+    "citation": "Therapist Toolkit. (n.d.). *Psychoanalysis cheat sheet* [Google Doc]."
   },
   {
-    "title": "Transpersonal Therapy Overview",
-    "url": "/files/Transpersonal-Therapy-Overview.pdf",
-    "description": "A guide to Transpersonal Therapy, which integrates the spiritual, social, emotional, and physical aspects of the human experience.",
+    "title": "Reality Therapy Theory Cheat Sheet",
+    "url": "https://docs.google.com/document/d/1DP08Xlshg7F6Ow75W701sAyn8TVuOeMy/edit?usp=sharing",
+    "description": "An introduction to William Glasser's Reality Therapy, focusing on the five basic needs, choice theory, and taking responsibility for one's actions.",
     "audience": ["Clinicians"],
     "format": "Article (Google Doc)",
     "language": ["English"],
     "features": ["Free"],
     "topics": {
       "diagnosis": [],
-      "symptom": ["Spirituality", "Purpose"],
-      "therapyStyle": ["Transpersonal"]
+      "symptom": ["Motivation", "Behavioral Issues"],
+      "therapyStyle": ["Reality Therapy"]
     },
-    "citation": "Therapist Toolkit. (n.d.). *Transpersonal Therapy overview* [Google Doc]."
+    "citation": "Therapist Toolkit. (n.d.). *Reality Therapy theory cheat sheet* [Google Doc]."
   },
   {
-    "title": "Set for Empowered Boundaries",
-    "url": "https://www.goodreads.com/en/book/show/58521692",
-    "description": "A book by Nedra Glover Tawwab providing practical advice and techniques for setting healthy boundaries in various life domains.",
-    "audience": ["Adults"],
-    "format": "Book",
-    "language": ["English"],
-    "features": ["BIPOC"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Boundaries", "Relationship Issues", "Self-Advocacy"],
-      "therapyStyle": []
-    },
-    "citation": "Tawwab, N. G. (2021). *Set boundaries, find peace: A guide to reclaiming yourself*. TarcherPerigee."
-  },
-  {
-    "title": "The Set Boundaries Workbook",
-    "url": "https://www.goodreads.com/book/show/58723438-the-set-boundaries-workbook",
-    "description": "A workbook by Nedra Glover Tawwab with exercises and prompts to help readers practice and implement boundary-setting skills.",
-    "audience": ["Adults"],
-    "format": "Book",
-    "language": ["English"],
-    "features": ["BIPOC", "Interactive", "Worksheets"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Boundaries", "Relationship Issues", "Self-Advocacy"],
-      "therapyStyle": []
-    },
-    "citation": "Tawwab, N. G. (2022). *The set boundaries workbook: Practical exercises for understanding your needs and communicating your limits*. TarcherPerigee."
-  },
-  {
-    "title": "Professional Troublemaker: The Fear-Fighter Manual",
-    "url": "https://www.goodreads.com/book/show/54304229-professional-troublemaker",
-    "description": "A book by Luvvie Ajayi Jones about overcoming fear to speak truth, set boundaries, and live authentically.",
-    "audience": ["Adults"],
-    "format": "Book",
-    "language": ["English"],
-    "features": ["BIPOC"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Fear", "Anxiety", "Self-Advocacy", "Imposter Syndrome"],
-      "therapyStyle": []
-    },
-    "citation": "Jones, L. A. (2021). *Professional troublemaker: The fear-fighter manual*. Penguin Life."
-  },
-  {
-    "title": "Why Setting Boundaries is an Act of Self-Care",
-    "url": "https://www.oprahdaily.com/life/relationships-love/a32832596/setting-boundaries-self-care/",
-    "description": "An article on Oprah Daily explaining the importance of boundary setting as a fundamental aspect of self-care and mental well-being.",
-    "audience": ["Adults"],
-    "format": "Article",
+    "title": "REBT Cheat Sheet",
+    "url": "https://docs.google.com/document/d/1rnySYbrMr1bJRX3wN8zhKID5Gbc4lkaZ/edit?usp=sharing",
+    "description": "A summary of Rational Emotive Behavior Therapy (REBT), detailing the ABCDE model for identifying and disputing irrational beliefs.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
     "language": ["English"],
     "features": ["Free"],
     "topics": {
       "diagnosis": [],
-      "symptom": ["Boundaries", "Self-Care", "People-Pleasing"],
-      "therapyStyle": []
+      "symptom": ["Negative Thoughts", "Cognitive Distortions"],
+      "therapyStyle": ["CBT", "REBT"]
     },
-    "citation": "Winfrey, O. (2020, June 16). Why setting boundaries is an act of self-care. *Oprah Daily*. Retrieved from https://www.oprahdaily.com/life/relationships-love/a32832596/setting-boundaries-self-care/"
-  },
-  {
-    "title": "Seattle Book Clubs",
-    "url": "https://www.seattlebookrev.com/book-clubs",
-    "description": "A directory of various book clubs and reading groups in the Seattle area, hosted by the Seattle Book Review.",
-    "audience": ["Adults"],
-    "format": "Directory",
-    "language": ["English"],
-    "features": ["Free", "Local (Seattle)"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Social Connection", "Hobbies"],
-      "therapyStyle": []
-    },
-    "citation": "Seattle Book Review. (n.d.). *Book clubs*. Retrieved from https://www.seattlebookrev.com/book-clubs"
-  },
-  {
-    "title": "Underdog Sports Leagues",
-    "url": "https://www.underdogseattle.com/",
-    "description": "A website for joining casual, co-ed adult sports leagues in Seattle, including kickball, volleyball, and softball.",
-    "audience": ["Adults"],
-    "format": "Website",
-    "language": ["English"],
-    "features": ["Local (Seattle)"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Social Connection", "Hobbies"],
-      "therapyStyle": []
-    },
-    "citation": "Underdog Sports Leagues. (n.d.). *Underdog Seattle*. Retrieved from https://www.underdogseattle.com/"
-  },
-  {
-    "title": "Washington Trails Association",
-    "url": "https://www.wta.org/",
-    "description": "A resource for finding hiking trails, trip reports, and joining volunteer trail work parties throughout Washington State.",
-    "audience": ["Adults", "Teens", "Families"],
-    "format": "Website",
-    "language": ["English"],
-    "features": ["Free", "Local (Seattle)"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Hobbies", "Social Connection"],
-      "therapyStyle": []
-    },
-    "citation": "Washington Trails Association. (n.d.). *Washington Trails Association*. Retrieved from https://www.wta.org/"
-  },
-  {
-    "title": "Meetup - Seattle",
-    "url": "https://www.meetup.com/find/us--wa--seattle/",
-    "description": "A platform for finding and creating local groups based on shared interests, from tech and career networking to arts and hiking.",
-    "audience": ["Adults"],
-    "format": "Website",
-    "language": ["English"],
-    "features": ["Free", "Local (Seattle)"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Social Connection", "Hobbies"],
-      "therapyStyle": []
-    },
-    "citation": "Meetup. (n.d.). *Seattle groups*. Retrieved from https://www.meetup.com/find/us--wa--seattle/"
-  },
-  {
-    "title": "Eventbrite - Seattle",
-    "url": "https://www.eventbrite.com/d/wa--seattle/events/",
-    "description": "A website for discovering local events, classes, workshops, and concerts happening in the Seattle area.",
-    "audience": ["Adults", "Teens", "Families"],
-    "format": "Website",
-    "language": ["English"],
-    "features": ["Local (Seattle)"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Social Connection", "Hobbies"],
-      "therapyStyle": []
-    },
-    "citation": "Eventbrite. (n.d.). *Seattle, WA events*. Retrieved from https://www.eventbrite.com/d/wa--seattle/events/"
-  },
-  {
-    "title": "The Stranger's Things To Do",
-    "url": "https://everout.com/seattle/",
-    "description": "A curated calendar of arts, music, food, and cultural events happening in Seattle, managed by The Stranger newspaper.",
-    "audience": ["Adults", "Young Adults"],
-    "format": "Website",
-    "language": ["English"],
-    "features": ["Free", "Local (Seattle)"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Social Connection", "Hobbies"],
-      "therapyStyle": []
-    },
-    "citation": "Everout. (n.d.). *Seattle: The ultimate guide to events & things to do*. Retrieved from https://everout.com/seattle/"
-  },
-  {
-    "title": "Seattle Parks and Recreation",
-    "url": "https://www.seattle.gov/parks",
-    "description": "The official website for Seattle's public parks, community centers, and recreational programs.",
-    "audience": ["Adults", "Teens", "Children", "Families"],
-    "format": "Website",
-    "language": ["English"],
-    "features": ["Free", "Low-Cost", "Local (Seattle)"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Hobbies", "Social Connection"],
-      "therapyStyle": []
-    },
-    "citation": "Seattle Parks and Recreation. (n.d.). *Seattle Parks and Recreation*. Retrieved from https://www.seattle.gov/parks"
-  },
-  {
-    "title": "Mox Boarding House",
-    "url": "https://www.moxboardinghouse.com/seattle/",
-    "description": "A restaurant and game store in Seattle with a large library of board games available to play for free.",
-    "audience": ["Adults", "Teens"],
-    "format": "Community Space",
-    "language": ["English"],
-    "features": ["Free", "Local (Seattle)"],
-    "topics": {
-      "diagnosis": [],
-      "symptom": ["Hobbies", "Social Connection"],
-      "therapyStyle": []
-    },
-    "citation": "Mox Boarding House. (n.d.). *Mox Boarding House Seattle*. Retrieved from https://www.moxboardinghouse.com/seattle/"
+    "citation": "Therapist Toolkit. (n.d.). *REBT cheat sheet* [Google Doc]."
   }
 ]
