@@ -1,0 +1,1172 @@
+[
+  {
+    "title": "988 Suicide & Crisis Lifeline",
+    "url": "https://988lifeline.org/",
+    "description": "Call or text 988 anytime in the US. Provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones.",
+    "audience": ["Adults", "Teens", "Children", "Parents"],
+    "format": "Hotline",
+    "language": ["English", "Spanish"],
+    "features": ["Free", "Crisis Support"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Suicidal Ideation", "Crisis", "Depression", "Anxiety"],
+      "therapyStyle": []
+    },
+    "citation": "Vibrant Emotional Health. (n.d.). *988 Suicide & Crisis Lifeline*. Retrieved from https://988lifeline.org/"
+  },
+  {
+    "title": "Crisis Text Line",
+    "url": "https://www.crisistextline.org/",
+    "description": "Text HOME to 741741 from anywhere in the US, anytime, about any type of crisis. A live, trained Crisis Counselor responds quickly from a secure online platform.",
+    "audience": ["Adults", "Teens", "Children"],
+    "format": "Hotline",
+    "language": ["English", "Spanish"],
+    "features": ["Free", "Crisis Support"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Crisis", "Suicidal Ideation", "Worry", "Panic"],
+      "therapyStyle": []
+    },
+    "citation": "Crisis Text Line. (n.d.). *Crisis Text Line*. Retrieved from https://www.crisistextline.org/"
+  },
+  {
+    "title": "The Trevor Project",
+    "url": "https://www.thetrevorproject.org/get-help/",
+    "description": "The leading national organization providing crisis intervention and suicide prevention services to lesbian, gay, bisexual, transgender, queer & questioning (LGBTQ) young people under 25.",
+    "audience": ["Teens", "Young Adults"],
+    "format": "Hotline",
+    "language": ["English"],
+    "features": ["Free", "Crisis Support", "LGBTQ+"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Crisis", "Suicidal Ideation", "Gender Identity", "Sexuality"],
+      "therapyStyle": []
+    },
+    "citation": "The Trevor Project. (n.d.). *Get help*. Retrieved from https://www.thetrevorproject.org/get-help/"
+  },
+  {
+    "title": "National Domestic Violence Hotline",
+    "url": "https://www.thehotline.org/",
+    "description": "24/7 free, confidential support for survivors of domestic violence. Call 1-800-799-7233 or text 'START' to 88788.",
+    "audience": ["Adults", "Teens"],
+    "format": "Hotline",
+    "language": ["English", "Spanish"],
+    "features": ["Free", "Crisis Support"],
+    "topics": {
+      "diagnosis": ["PTSD"],
+      "symptom": ["Trauma", "Abuse", "Relationship Issues"],
+      "therapyStyle": []
+    },
+    "citation": "National Domestic Violence Hotline. (n.d.). *National Domestic Violence Hotline*. Retrieved from https://www.thehotline.org/"
+  },
+  {
+    "title": "Psychology Today Therapist Directory",
+    "url": "https://www.psychologytoday.com/us/therapists",
+    "description": "A comprehensive directory of therapists, psychiatrists, and treatment centers, searchable by location, insurance, and specialty.",
+    "audience": ["Adults", "Teens", "Children", "Parents", "Couples"],
+    "format": "Directory",
+    "language": ["English"],
+    "features": ["Therapist Finder"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": [],
+      "therapyStyle": []
+    },
+    "citation": "Psychology Today. (n.d.). *Find a therapist*. Retrieved from https://www.psychologytoday.com/us/therapists"
+  },
+  {
+    "title": "National Alliance on Mental Illness (NAMI)",
+    "url": "https://www.nami.org/Home",
+    "description": "The nation's largest grassroots mental health organization dedicated to building better lives for the millions of Americans affected by mental illness.",
+    "audience": ["Adults", "Parents", "Clinicians"],
+    "format": "Website",
+    "language": ["English"],
+    "features": ["Free", "Support Groups", "Advocacy"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": [],
+      "therapyStyle": []
+    },
+    "citation": "National Alliance on Mental Illness. (n.d.). *Home*. Retrieved from https://www.nami.org/Home"
+  },
+  {
+    "title": "SAMHSA National Helpline",
+    "url": "https://www.samhsa.gov/find-help/national-helpline",
+    "description": "A free, confidential, 24/7, 365-day-a-year treatment referral and information service for individuals and families facing mental and/or substance use disorders.",
+    "audience": ["Adults", "Parents"],
+    "format": "Hotline",
+    "language": ["English", "Spanish"],
+    "features": ["Free", "Therapist Finder", "Referrals"],
+    "topics": {
+      "diagnosis": ["Substance Use Disorder"],
+      "symptom": ["Addiction"],
+      "therapyStyle": []
+    },
+    "citation": "Substance Abuse and Mental Health Services Administration. (n.d.). *National Helpline*. Retrieved from https://www.samhsa.gov/find-help/national-helpline"
+  },
+  {
+    "title": "Self-Injury Outreach and Support (SiOS)",
+    "url": "http://sioutreach.org/",
+    "description": "A non-profit outreach initiative providing current information and helpful resources about self-injury for individuals and their families.",
+    "audience": ["Teens", "Young Adults", "Parents"],
+    "format": "Website",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Borderline Personality Disorder (BPD)"],
+      "symptom": ["Self-Harm"],
+      "therapyStyle": ["Coping Skills"]
+    },
+    "citation": "Self-Injury Outreach and Support. (n.d.). *Self-Injury Outreach and Support*. Retrieved from http://sioutreach.org/"
+  },
+  {
+    "title": "National Eating Disorders Association (NEDA)",
+    "url": "https://www.nationaleatingdisorders.org/",
+    "description": "The leading non-profit organization supporting individuals and families affected by eating disorders through resources, support, and advocacy.",
+    "audience": ["Adults", "Teens", "Parents"],
+    "format": "Website",
+    "language": ["English"],
+    "features": ["Free", "Support Groups"],
+    "topics": {
+      "diagnosis": ["Anorexia", "Bulimia", "Binge Eating Disorder"],
+      "symptom": ["Eating Challenges", "Body Image"],
+      "therapyStyle": []
+    },
+    "citation": "National Eating Disorders Association. (n.d.). *National Eating Disorders Association*. Retrieved from https://www.nationaleatingdisorders.org/"
+  },
+  {
+    "title": "DBT Self-Help",
+    "url": "https://dbtselfhelp.com/",
+    "description": "An online resource for learning the skills of Dialectical Behavior Therapy, including mindfulness, distress tolerance, emotion regulation, and interpersonal effectiveness.",
+    "audience": ["Adults", "Teens", "Clinicians"],
+    "format": "Website",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Worksheets"],
+    "topics": {
+      "diagnosis": ["Borderline Personality Disorder (BPD)"],
+      "symptom": ["Emotional Dysregulation", "Self-Harm", "Relationship Issues"],
+      "therapyStyle": ["DBT", "Mindfulness-Based"]
+    },
+    "citation": "DBT Self-Help. (n.d.). *DBT Self-Help*. Retrieved from https://dbtselfhelp.com/"
+  },
+  {
+    "title": "The ACT Companion App",
+    "url": "https://thehappinesstrap.com/act-companion-app/",
+    "description": "An app based on Acceptance and Commitment Therapy (ACT) created by Dr. Russ Harris. Helps you practice skills and live a more meaningful life.",
+    "audience": ["Adults", "Teens"],
+    "format": "App",
+    "language": ["English"],
+    "features": ["Low-Cost"],
+    "topics": {
+      "diagnosis": ["Anxiety Disorders", "Depression"],
+      "symptom": ["Worry", "Anxiety", "Depression"],
+      "therapyStyle": ["ACT", "Mindfulness-Based"]
+    },
+    "citation": "Harris, R. (n.d.). *The ACT Companion App*. The Happiness Trap. Retrieved from https://thehappinesstrap.com/act-companion-app/"
+  },
+  {
+    "title": "ADHD Overview for Adults",
+    "url": "https://drive.google.com/file/d/1pt-KbU1EXJvo1g0ZD3OX_FI96oATDAJT/view?usp=sharing",
+    "description": "An overview of how ADHD affects adults, covering symptoms of inattention and hyperactivity, the biological basis of the disorder, and treatment options.",
+    "audience": ["Adults"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": ["ADHD"],
+      "symptom": ["Executive Dysfunction", "Inattention", "Hyperactivity"],
+      "therapyStyle": []
+    },
+    "citation": "Therapist Toolkit. (n.d.). *ADHD overview for adults* [PDF]."
+  },
+  {
+    "title": "ADHD Overview for Teens",
+    "url": "https://drive.google.com/file/d/12LdSnMDGGzRu6X3_giKPGk6TukeaZTV3/view?usp=sharing",
+    "description": "A guide for teenagers on the signs of ADHD, including inattention (e.g., mind wandering) and hyperactivity (e.g., fidgeting).",
+    "audience": ["Teens", "Parents"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": ["ADHD"],
+      "symptom": ["Inattention", "Hyperactivity", "School Issues"],
+      "therapyStyle": []
+    },
+    "citation": "Therapist Toolkit. (n.d.). *ADHD overview for teens* [PDF]."
+  },
+  {
+    "title": "Class Assignments Tracker",
+    "url": "https://docs.google.com/spreadsheets/d/1D0vCugkCUBTiNNvMzULJxL6crfL7BZ0EhU7Nsqbd30U/edit?usp=sharing",
+    "description": "A spreadsheet for tracking weekly readings and assignments for various courses, adaptable for personal use.",
+    "audience": ["Teens", "Adults"],
+    "format": "Spreadsheet",
+    "language": ["English"],
+    "features": ["Free", "Interactive", "Printable"],
+    "topics": {
+      "diagnosis": ["ADHD"],
+      "symptom": ["Executive Dysfunction", "Organization"],
+      "therapyStyle": ["Coping Skills"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Class assignments tracker* [Google Sheet]."
+  },
+  {
+    "title": "Breaking Down Large Goals",
+    "url": "https://drive.google.com/file/d/1W_JnMhCT0_WxPUVGAt18zMvcPETB9zpK/view?usp=sharing",
+    "description": "A worksheet that teaches how to break down large, overwhelming goals into smaller, manageable tasks. It provides tips like limiting tasks to one hour and scheduling them.",
+    "audience": ["Adults", "Teens"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+      "diagnosis": ["ADHD", "Anxiety Disorders", "Depression"],
+      "symptom": ["Executive Dysfunction", "Procrastination", "Organization"],
+      "therapyStyle": ["CBT", "Coping Skills"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Breaking down large goals* [PDF]."
+  },
+  {
+    "title": "ADHD Skills for Kids (Kangaroo Packet)",
+    "url": "https://drive.google.com/file/d/1aiDxgVJzC2TLVOki-tlVZ7IhHhM3qH2e/view?usp=sharing",
+    "description": "A resource packet for children with skills like 'Ocean Breathing' for calming down, creating daily routines, and a 4-step guide to problem-solving for challenges like losing homework.",
+    "audience": ["Children", "Parents"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+      "diagnosis": ["ADHD"],
+      "symptom": ["Emotional Dysregulation", "Coping Skills", "School Issues"],
+      "therapyStyle": ["Mindfulness-Based", "Coping Skills"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *ADHD skills for kids (Kangaroo Packet)* [PDF]."
+  },
+  {
+    "title": "Tips for ADHD Management",
+    "url": "https://drive.google.com/file/d/1NT0pJWm1fEWc6AUS4w5uO4YaGUv5xmAb/view?usp=sharing",
+    "description": "A guide on managing ADHD symptoms through creating structure, setting aside time for relationships, staying organized with to-do lists, tailoring your environment, and maintaining a healthy lifestyle.",
+    "audience": ["Adults"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": ["ADHD"],
+      "symptom": ["Executive Dysfunction", "Organization", "Relationship Issues"],
+      "therapyStyle": ["Coping Skills"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Tips for ADHD management* [PDF]."
+  },
+  {
+    "title": "Anxiety Coping Skills",
+    "url": "https://drive.google.com/file/d/13dB169Q_tLtP4cZMSxddOZFlefCNOzDL/view?usp=sharing",
+    "description": "A worksheet with techniques for managing anxiety, including deep breathing, progressive muscle relaxation, challenging irrational thoughts, and guided imagery.",
+    "audience": ["Adults", "Teens"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+      "diagnosis": ["Anxiety Disorders", "Panic Disorder"],
+      "symptom": ["Anxiety", "Worry", "Panic"],
+      "therapyStyle": ["CBT", "Mindfulness-Based", "Coping Skills"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Anxiety coping skills* [PDF]."
+  },
+  {
+    "title": "Ways to Stop Ruminating",
+    "url": "https://docs.google.com/document/d/1A8b6uVFYNgldI1YcWwilvd_8C6cxBAfZYT5dKMHoTjM/edit?usp=sharing",
+    "description": "An article detailing 15 therapeutic tips to break the cycle of ruminating thoughts, including grounding, distraction, mindfulness, and thought challenging.",
+    "audience": ["Adults", "Teens", "Clinicians"],
+    "format": "Article",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Anxiety Disorders", "OCD", "Depression"],
+      "symptom": ["Rumination", "Worry", "Obsessive Thoughts"],
+      "therapyStyle": ["CBT", "Mindfulness-Based", "Coping Skills"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Ways to stop ruminating* [Google Doc]."
+  },
+  {
+    "title": "Autism & Sexual Development",
+    "url": "https://docs.google.com/document/d/1g3_rsZF39GbSQgyVEctUlT-Fi8LzOt_M5fbMoFLXcjI/edit?usp=sharing",
+    "description": "A guide for parents and autistic teens on navigating sexual development, covering topics like consent, relationships, sexual health, and masturbation.",
+    "audience": ["Teens", "Parents"],
+    "format": "Article",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Autism"],
+      "symptom": ["Sexuality", "Relationships", "Social Skills"],
+      "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Autism & sexual development* [Google Doc]."
+  },
+  {
+    "title": "The Autistic Burnout Symptom Checklist",
+    "url": "https://drive.google.com/file/d/1e9KfbhVH58vmoL520cXtchbjuDNhRarQ/view?usp=sharing",
+    "description": "A self-assessment checklist for autistic adults to identify and track symptoms of burnout across physical, cognitive, executive functioning, social, emotional, and sensory domains.",
+    "audience": ["Adults", "Clinicians"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Self-Assessment"],
+    "topics": {
+      "diagnosis": ["Autism"],
+      "symptom": ["Burnout", "Fatigue", "Executive Dysfunction"],
+      "therapyStyle": []
+    },
+    "citation": "Therapist Toolkit. (n.d.). *The autistic burnout symptom checklist* [PDF]."
+  },
+  {
+    "title": "Defining Autistic Burnout (Raymaker et al., 2020)",
+    "url": "https://drive.google.com/file/d/1vOBMcsBycs9zh7r4J40Aym-yBZkAsMjV/view?usp=sharing",
+    "description": "A research paper defining autistic burnout as a syndrome characterized by chronic exhaustion, loss of skills, and reduced tolerance to stimulus resulting from chronic life stress.",
+    "audience": ["Clinicians", "Researchers", "Adults"],
+    "format": "Academic Paper",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Autism"],
+      "symptom": ["Burnout", "Fatigue", "Masking"],
+      "therapyStyle": []
+    },
+    "citation": "Raymaker, D. M., Teo, A. R., Steckler, N. A., Lentz, B., Scharer, M., Delos Santos, K., ... & Nicolaidis, C. (2020). 'Having all of your internal resources exhausted beyond measure and being left with no clean-up crew': Defining autistic burnout. *Autism in Adulthood, 2*(2), 132-143."
+  },
+  {
+    "title": "Interpersonal Trauma and PTSD in Autistic Adults",
+    "url": "https://drive.google.com/file/d/1h6KZzeiPX9rq99CuJCQ6QpUroW-oCohE/view?usp=sharing",
+    "description": "A study on the high rates of interpersonal trauma (IPT) and PTSD in autistic adults, highlighting increased vulnerability for women and gender minorities.",
+    "audience": ["Clinicians", "Researchers"],
+    "format": "Academic Paper",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Autism", "PTSD"],
+      "symptom": ["Trauma", "Abuse", "Dissociation"],
+      "therapyStyle": []
+    },
+    "citation": "Rumball, F., Happé, F., & Grey, N. (2020). Experience of trauma and PTSD symptoms in autistic adults: risk and resilience factors. *Autism, 24*(8), 2131-2142."
+  },
+  {
+    "title": "Dissociation in Autism Spectrum Disorders",
+    "url": "https://drive.google.com/file/d/1cBQCwW_wlA80eoolYowVbvaWv6l6CCGk/view?usp=sharing",
+    "description": "A book chapter exploring dissociation as a common but under-recognized symptom in autistic individuals, often linked to anxiety, trauma, and sensory overstimulation.",
+    "audience": ["Clinicians", "Researchers", "Adults"],
+    "format": "Book Chapter",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Autism", "Dissociative Disorders", "PTSD"],
+      "symptom": ["Dissociation", "Trauma", "Anxiety", "Sensory Overload"],
+      "therapyStyle": []
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Dissociation in autism spectrum disorders* [PDF]."
+  },
+  {
+    "title": "Dissociation of Brain Activation in Autism and SPD",
+    "url": "https://drive.google.com/file/d/1T1XS-Wi3ftS-4MsFf7-_uCHoIHYTV-pQ/view?usp=sharing",
+    "description": "An fMRI study comparing brain activation during social judgments in adults with Autism Spectrum Disorder (ASD) and Schizotypal Personality Disorder (SPD).",
+    "audience": ["Researchers"],
+    "format": "Academic Paper",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Autism", "Schizotypal Personality Disorder"],
+      "symptom": ["Social Cognition"],
+      "therapyStyle": []
+    },
+    "citation": "Ciaramidaro, A., Bölte, S., Goucha, T., Kolli, S., Poustka, F., & Walter, H. (2021). Dissociation of brain activation in adults with autism spectrum disorder and schizotypal personality disorder during a social judgment task. *Journal of Psychiatric Research, 137*, 308-317."
+  },
+  {
+    "title": "Co-occurring Autism and Trauma, PTSD, and Dissociation",
+    "url": "https://drive.google.com/file/d/1v6ZwI6W0m9MEiR2GGHWRkXpD4AGtC2Mc/view?usp=sharing",
+    "description": "An article for clinicians on identifying and treating co-occurring autism, trauma, and dissociation, discussing symptom overlap and treatment considerations.",
+    "audience": ["Clinicians"],
+    "format": "Article",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Autism", "PTSD", "Dissociative Disorders"],
+      "symptom": ["Trauma", "Dissociation", "Masking"],
+      "therapyStyle": ["Trauma-Informed Care"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Co-occurring autism and trauma, PTSD, and dissociation* [PDF]."
+  },
+  {
+    "title": "The Autism-Dissociation Association",
+    "url": "https://drive.google.com/file/d/1MRz-nibPVh_Ss1zP-SM8mrZ1K-XE7WG5/view?usp=sharing",
+    "description": "A presentation exploring the overlaps and interactions between autism and dissociation, reframing trauma as 'Chronic Unaddressed Toxic Stress' (CUTS).",
+    "audience": ["Adults", "Clinicians"],
+    "format": "Presentation",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Autism", "Dissociative Disorders"],
+      "symptom": ["Dissociation", "Trauma", "Stress", "Sensory Overload"],
+      "therapyStyle": []
+    },
+    "citation": "Therapist Toolkit. (n.d.). *The autism-dissociation association* [PDF]."
+  },
+  {
+    "title": "Autism: A Dissociated Self",
+    "url": "https://drive.google.com/file/d/1TVM1Z8-DpnbiEyuNZIrH6afUDC5gwziN/view?usp=sharing",
+    "description": "A presentation exploring the relationship between autism, anxiety, and dissociation from a psychotherapeutic and neurobiological perspective.",
+    "audience": ["Clinicians", "Researchers"],
+    "format": "Presentation",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Autism", "Dissociative Disorders"],
+      "symptom": ["Dissociation", "Anxiety", "Sensory Overload", "Self-Concept"],
+      "therapyStyle": ["Psychodynamic", "Intersubjectivity"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Autism: A dissociated self* [PDF]."
+  },
+  {
+    "title": "Boundary Setting Literature",
+    "url": "https://docs.google.com/document/d/1J7YXUQ96jhobFwpP4Nx_49qo_IGu4Ou_9ERjjlujZiM/edit?usp=sharing",
+    "description": "A curated list of books and web articles focused on setting empowered boundaries, particularly for women of color in professional environments.",
+    "audience": ["Adults", "Clinicians"],
+    "format": "Article",
+    "language": ["English"],
+    "features": ["BIPOC"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Boundaries", "Workplace Stress", "Relationship Issues"],
+      "therapyStyle": []
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Boundary setting literature* [Google Doc]."
+  },
+  {
+    "title": "Work-Life Balance & Boundaries",
+    "url": "https://drive.google.com/file/d/1Ybd8honEw6pwWd-eWFWbFbBe7d_6d32i/view?usp=sharing",
+    "description": "A worksheet from Therapist Aid on creating work-life boundaries to prevent burnout by winding down, setting intentions, modifying your environment, and changing behavior.",
+    "audience": ["Adults"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Burnout", "Workplace Stress", "Boundaries", "Self-Care"],
+      "therapyStyle": ["Coping Skills"]
+    },
+    "citation": "Therapist Aid. (n.d.). *Work-life balance & boundaries* [PDF]. Retrieved from Therapist Aid."
+  },
+  {
+    "title": "Decision Making Strategies",
+    "url": "https://docs.google.com/document/d/1DE0gv6Buhaq8wObK8EFodCclDcFQGC7nETuBVEOOu8Y/edit?usp=sharing",
+    "description": "An overview of various decision-making models, including a 7-step process, ethical frameworks (consequentialism, deontology), and the RAID model for categorizing decisions.",
+    "audience": ["Adults", "Clinicians"],
+    "format": "Article",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Decision Making"],
+      "therapyStyle": ["CBT", "Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Decision making strategies* [Google Doc]."
+  },
+  {
+    "title": "Focus Plan Worksheet",
+    "url": "https://drive.google.com/file/d/1cT4gHicZMPL4nSSQ5xEdqmzPIyxA9Rr9/view?usp=sharing",
+    "description": "A 5-step worksheet from Therapist Aid to improve focus by defining a task, breaking it into parts, creating a schedule, preparing for it, and imagining the outcome.",
+    "audience": ["Adults", "Teens"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+      "diagnosis": ["ADHD"],
+      "symptom": ["Executive Dysfunction", "Focus", "Organization", "Procrastination"],
+      "therapyStyle": ["CBT", "Coping Skills"]
+    },
+    "citation": "Therapist Aid. (n.d.). *Focus plan* [PDF]. Retrieved from Therapist Aid."
+  },
+  {
+    "title": "Focusing Options & Sleepiness Tracking",
+    "url": "https://docs.google.com/document/d/1YCSi9l-xQCTqHBExpK-MuujG7YAj4mlgI6xe1DYF-tc/edit?usp=sharing",
+    "description": "A list of strategies to improve focus by managing sleepiness and engaging in motor skills or stimulating activities, including a log for tracking patterns of tiredness.",
+    "audience": ["Adults", "Teens"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+      "diagnosis": ["ADHD", "Narcolepsy"],
+      "symptom": ["Focus", "Fatigue", "Sleep Loss"],
+      "therapyStyle": ["Coping Skills", "Behavioral"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Focusing options & sleepiness tracking* [Google Doc]."
+  },
+  {
+    "title": "Emotional Regulation Cheat Sheet",
+    "url": "https://docs.google.com/document/d/1FwUTN2JYddJdbsN8WKgEK4ob4gA2NzjVdmfpBiHf1y0/edit?usp=sharing",
+    "description": "A cheat sheet outlining six useful emotional regulation skills: Self-Awareness, Mindful Awareness, Cognitive Reappraisal, Adaptability, Self-Compassion, and Emotional Support.",
+    "audience": ["Adults", "Teens"],
+    "format": "Article",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+        "diagnosis": [],
+        "symptom": ["Emotional Dysregulation", "Self-Compassion"],
+        "therapyStyle": ["CBT", "Mindfulness-Based", "Coping Skills"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Emotional regulation cheat sheet* [Google Doc]."
+  },
+  {
+    "title": "Grounding Techniques",
+    "url": "https://docs.google.com/document/d/1eL9Vd1PSXTb83cr1oaVnPDJ6NFEVBZQgwQgVmrmWw7s/edit?usp=sharing",
+    "description": "A list of grounding techniques to help manage anxiety and dissociation by reconnecting with the present moment through sensory experiences.",
+    "audience": ["Adults", "Teens"],
+    "format": "Article",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+        "diagnosis": ["Anxiety Disorders", "PTSD", "Dissociative Disorders"],
+        "symptom": ["Anxiety", "Dissociation", "Panic", "Trauma"],
+        "therapyStyle": ["Grounding", "Coping Skills"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Grounding techniques* [Google Doc]."
+  },
+  {
+    "title": "Wellness Check-In",
+    "url": "https://docs.google.com/document/d/1Mifldd7C4uXdnDwNrlfnagoyCdP3kpIh1Bi5OAdRrV0/edit?usp=sharing",
+    "description": "A guide defining eight dimensions of wellness (Emotional, Social, Environmental, Physical, Intellectual, Spiritual, Professional, Financial) with examples for self-reflection.",
+    "audience": ["Adults", "Teens"],
+    "format": "Article",
+    "language": ["English"],
+    "features": ["Free", "Self-Assessment"],
+    "topics": {
+        "diagnosis": [],
+        "symptom": ["Self-Care", "Burnout"],
+        "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Wellness check-in* [Google Doc]."
+  },
+  {
+    "title": "Controlling Cognitive Distortions",
+    "url": "https://docs.google.com/document/d/1RneU_HKBLD2Fhwk8dbEIHb8FKLwXMrCh3niRI19jn3M/edit?usp=sharing",
+    "description": "A 4-step guide to help recognize, challenge, and gain control over negative thoughts and cognitive distortions that contribute to stress and depression.",
+    "audience": ["Adults", "Teens"],
+    "format": "Article",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+        "diagnosis": ["Depression", "Anxiety Disorders"],
+        "symptom": ["Negative Thoughts", "Worry", "Rumination"],
+        "therapyStyle": ["CBT"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Controlling cognitive distortions* [Google Doc]."
+  },
+  {
+    "title": "Positive Psychology Prompt Cards",
+    "url": "https://drive.google.com/file/d/1Iw6zqxtcPeDlgx6B8P82snFrjHSq7Zl2/view?usp=sharing",
+    "description": "A set of printable cards with prompts designed to encourage positive reflection on daily events, personal strengths, and moments of gratitude.",
+    "audience": ["Adults", "Teens", "Children"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+        "diagnosis": [],
+        "symptom": ["Depression", "Self-Esteem"],
+        "therapyStyle": ["Positive Psychology"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Positive psychology prompt cards* [PDF]."
+  },
+  {
+    "title": "What is Imposter Syndrome?",
+    "url": "https://drive.google.com/file/d/15kbUssD9miWjjYtHidFkhpj4shWArCtx/view?usp=sharing",
+    "description": "A worksheet defining imposter syndrome, its common traits, consequences, and risk factors, especially among high-achieving individuals.",
+    "audience": ["Adults"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+        "diagnosis": [],
+        "symptom": ["Imposter Syndrome", "Anxiety", "Self-Esteem", "Workplace Stress"],
+        "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *What is imposter syndrome?* [PDF]."
+  },
+  {
+    "title": "My Strengths and Qualities",
+    "url": "https://drive.google.com/file/d/1ApfpYgZAm6Qxm9h6eh_yHvYxpMXgiZrV/view?usp=sharing",
+    "description": "A worksheet with prompts to help individuals identify and reflect upon their personal strengths, qualities, accomplishments, and values.",
+    "audience": ["Adults", "Teens"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+        "diagnosis": [],
+        "symptom": ["Self-Esteem", "Self-Concept"],
+        "therapyStyle": ["Positive Psychology"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *My strengths and qualities* [PDF]."
+  },
+  {
+    "title": "Positive Traits List",
+    "url": "https://drive.google.com/file/d/1urza-QMLNSXk5q69LRgGLXB4dj6FCNEi/view?usp=sharing",
+    "description": "A comprehensive list of positive character traits to help individuals identify their own strengths and positive qualities.",
+    "audience": ["Adults", "Teens", "Children"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+        "diagnosis": [],
+        "symptom": ["Self-Esteem", "Self-Concept"],
+        "therapyStyle": ["Positive Psychology"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Positive traits list* [PDF]."
+  },
+  {
+    "title": "Self-Esteem Journal",
+    "url": "https://drive.google.com/file/d/1o_icmucpPGFwYimN7gdUCCj3Yay2NAUQ/view?usp=sharing",
+    "description": "A weekly journaling worksheet with daily prompts to encourage reflection on accomplishments, positive experiences, and moments of pride to build self-esteem.",
+    "audience": ["Adults", "Teens"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Journaling"],
+    "topics": {
+        "diagnosis": ["Depression"],
+        "symptom": ["Self-Esteem", "Depression"],
+        "therapyStyle": ["Positive Psychology", "Journaling"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Self-esteem journal* [PDF]."
+  },
+  {
+    "title": "Strengths Exploration",
+    "url": "https://drive.google.com/file/d/1-KaBZRCnfEnpC4BkhG_-K4gtWGtD4QGB/view?usp=sharing",
+    "description": "A multi-page worksheet designed to help individuals identify their core strengths and explore how to apply them in relationships, their profession, and for personal fulfillment.",
+    "audience": ["Adults", "Teens"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+        "diagnosis": [],
+        "symptom": ["Self-Esteem", "Self-Concept", "Career"],
+        "therapyStyle": ["Positive Psychology"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Strengths exploration* [PDF]."
+  },
+  {
+    "title": "Venn Diagram - ADHD & Autism",
+    "url": "https://drive.google.com/file/d/1RkFjRmm6BHkB6VCJx-RnSAWPihcAzGdD/view?usp=sharing",
+    "description": "A Venn diagram illustrating the overlapping and distinct traits of ADHD and Autism.",
+    "audience": ["Clinicians", "Adults", "Parents"],
+    "format": "Venn Diagram",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": ["ADHD", "Autism"],
+      "symptom": ["Executive Dysfunction", "Social Skills", "Sensory Overload"],
+      "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Venn Diagram - ADHD & Autism* [PDF]."
+  },
+  {
+    "title": "Venn Diagram - ADHD, Autism & Anxiety",
+    "url": "https://drive.google.com/file/d/1SfDfnyifK21XrDJVKPLtdaCNGc8BXa8H/view?usp=sharing",
+    "description": "A Venn diagram showing the interplay of symptoms between ADHD, Autism, and Anxiety.",
+    "audience": ["Clinicians", "Adults"],
+    "format": "Venn Diagram",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": ["ADHD", "Autism", "Anxiety Disorders"],
+      "symptom": ["Anxiety", "Worry", "Executive Dysfunction"],
+      "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Venn Diagram - ADHD, Autism & Anxiety* [PDF]."
+  },
+  {
+    "title": "Venn Diagram - ADHD, Autism & PTSD",
+    "url": "https://drive.google.com/file/d/1I-CTeMuwRvUOSPQsfXZ9nA6uFo7V5CK3/view?usp=sharing",
+    "description": "A Venn diagram illustrating the complex symptom overlap between ADHD, Autism, and PTSD.",
+    "audience": ["Clinicians", "Adults"],
+    "format": "Venn Diagram",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": ["ADHD", "Autism", "PTSD"],
+      "symptom": ["Trauma", "Hypervigilance", "Executive Dysfunction"],
+      "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Venn Diagram - ADHD, Autism & PTSD* [PDF]."
+  },
+  {
+    "title": "Venn Diagram - ADHD, Autism & OCD",
+    "url": "https://drive.google.com/file/d/1XXm9MTyvM_T2XHBz8YFMSK6Km4K_MiW1/view?usp=sharing",
+    "description": "A Venn diagram comparing the traits of ADHD, Autism, and OCD, highlighting areas of convergence.",
+    "audience": ["Clinicians", "Adults"],
+    "format": "Venn Diagram",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": ["ADHD", "Autism", "OCD"],
+      "symptom": ["Obsessive Thoughts", "Repetitive Behaviors", "Executive Dysfunction"],
+      "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Venn Diagram - ADHD, Autism & OCD* [PDF]."
+  },
+  {
+    "title": "Venn Diagram - ADHD & Anxiety",
+    "url": "https://drive.google.com/file/d/1jas2Ghked04klD3oaP1RqmGEkQOxvNaJ/view?usp=sharing",
+    "description": "A Venn diagram showing the shared and distinct symptoms of ADHD and Anxiety.",
+    "audience": ["Clinicians", "Adults"],
+    "format": "Venn Diagram",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": ["ADHD", "Anxiety Disorders"],
+      "symptom": ["Anxiety", "Worry", "Inattention"],
+      "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Venn Diagram - ADHD & Anxiety* [PDF]."
+  },
+  {
+    "title": "Autism Masking & Stereotypes",
+    "url": "https://drive.google.com/file/d/1dm4Lut_K5F-fYNwLMbkWN9q5pdyQxMeC/view?usp=sharing",
+    "description": "An infographic exploring the concept of autistic masking and breaking down common stereotypes.",
+    "audience": ["Adults", "Teens", "Clinicians", "Parents"],
+    "format": "Infographic",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": ["Autism"],
+      "symptom": ["Masking", "Social Skills", "Stigma"],
+      "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Autism masking & stereotypes* [PDF]."
+  },
+  {
+    "title": "Why are autistic people always misunderstood?",
+    "url": "https://youtu.be/QbH9pLqq5S8",
+    "description": "A video by Morgan Foley discussing the communication differences and misunderstandings faced by autistic individuals.",
+    "audience": ["Adults", "Teens", "Parents"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Autism"],
+      "symptom": ["Social Skills", "Communication", "Stigma"],
+      "therapyStyle": []
+    },
+    "citation": "Foley, M. (2021, May 18). *Why are autistic people always misunderstood?* [Video]. YouTube. https://youtu.be/QbH9pLqq5S8"
+  },
+  {
+    "title": "How Anxiety is Different for Men",
+    "url": "https://www.youtube.com/watch?v=vcBr1LQyMmw",
+    "description": "A video by Healthy Gamer discussing the unique ways anxiety can manifest in men due to societal pressures and expectations.",
+    "audience": ["Adults", "Men"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Anxiety Disorders"],
+      "symptom": ["Anxiety", "Masculinity", "Emotional Expression"],
+      "therapyStyle": []
+    },
+    "citation": "Healthy Gamer. (2021, July 29). *How anxiety is different for men* [Video]. YouTube. https://www.youtube.com/watch?v=vcBr1LQyMmw"
+  },
+  {
+    "title": "ADHD Social Skills: Socialize with Confidence",
+    "url": "https://www.youtube.com/watch?v=FsQ0u9w4r7M",
+    "description": "A video from How to ADHD providing tips on 'pre-gaming' social situations to build confidence and improve social skills.",
+    "audience": ["Adults", "Teens"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["ADHD"],
+      "symptom": ["Social Skills", "Anxiety", "Relationship Issues"],
+      "therapyStyle": ["Coping Skills"]
+    },
+    "citation": "How to ADHD. (2018, August 9). *ADHD social skills: Socialize with confidence* [Video]. YouTube. https://www.youtube.com/watch?v=FsQ0u9w4r7M"
+  },
+  {
+    "title": "Does ADHD Make You More Anxious?",
+    "url": "https://youtu.be/cscVzF_n9R0",
+    "description": "A video by Healthy Gamer exploring the neurological and psychological links between ADHD and anxiety.",
+    "audience": ["Adults", "Teens", "Clinicians"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["ADHD", "Anxiety Disorders"],
+      "symptom": ["Anxiety", "Executive Dysfunction", "Worry"],
+      "therapyStyle": []
+    },
+    "citation": "Healthy Gamer. (2020, December 22). *Does ADHD make you more anxious?* [Video]. YouTube. https://youtu.be/cscVzF_n9R0"
+  },
+  {
+    "title": "You Can't Logic Your Way Out of Depression",
+    "url": "https://www.youtube.com/watch?v=PmGIwRvcIrg",
+    "description": "A video by Healthy Gamer discussing why intellectual understanding often isn't enough to overcome depression and what approaches can help.",
+    "audience": ["Adults", "Teens"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Depression"],
+      "symptom": ["Depression", "Rumination", "Motivation"],
+      "therapyStyle": []
+    },
+    "citation": "Healthy Gamer. (2020, October 29). *You can't logic your way out of depression* [Video]. YouTube. https://www.youtube.com/watch?v=PmGIwRvcIrg"
+  },
+  {
+    "title": "You Need to Break the Cycle of Depression",
+    "url": "https://www.youtube.com/watch?v=Cv3bj1M96fQ",
+    "description": "A video by Healthy Gamer on understanding and breaking the cyclical nature of depressive thoughts and behaviors.",
+    "audience": ["Adults", "Teens"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["Depression"],
+      "symptom": ["Depression", "Motivation", "Rumination"],
+      "therapyStyle": ["Behavioral Activation"]
+    },
+    "citation": "Healthy Gamer. (2021, March 11). *You need to break the cycle of depression* [Video]. YouTube. https://www.youtube.com/watch?v=Cv3bj1M96fQ"
+  },
+  {
+    "title": "Why Your Brain Fog Never Goes Away",
+    "url": "https://www.youtube.com/watch?v=qoR72-aM4mI",
+    "description": "A video by Healthy Gamer discussing the causes of persistent brain fog and strategies to regain mental clarity.",
+    "audience": ["Adults"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["ADHD", "Depression", "Anxiety Disorders"],
+      "symptom": ["Brain Fog", "Focus", "Fatigue"],
+      "therapyStyle": []
+    },
+    "citation": "Healthy Gamer. (2021, April 29). *Why your brain fog never goes away* [Video]. YouTube. https://www.youtube.com/watch?v=qoR72-aM4mI"
+  },
+  {
+    "title": "Why You Feel Lost in Your 20s",
+    "url": "https://www.youtube.com/watch?v=2TqeZ8CJ6tw",
+    "description": "A video by Healthy Gamer exploring the common feelings of being lost and lacking purpose during young adulthood.",
+    "audience": ["Young Adults"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Purpose", "Life Transitions", "Identity"],
+      "therapyStyle": []
+    },
+    "citation": "Healthy Gamer. (2021, September 2). *Why you feel lost in your 20s* [Video]. YouTube. https://www.youtube.com/watch?v=2TqeZ8CJ6tw"
+  },
+  {
+    "title": "Why Finding Purpose is So Hard Today",
+    "url": "https://www.youtube.com/watch?v=NuHEY7CjjTI",
+    "description": "A video by Healthy Gamer discussing the modern challenges and societal factors that make finding a sense of purpose difficult.",
+    "audience": ["Adults"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Purpose", "Existential Dread", "Motivation"],
+      "therapyStyle": []
+    },
+    "citation": "Healthy Gamer. (2021, January 21). *Why finding purpose is so hard today* [Video]. YouTube. https://www.youtube.com/watch?v=NuHEY7CjjTI"
+  },
+  {
+    "title": "How to Start to Find Purpose in Your Life",
+    "url": "https://www.youtube.com/watch?v=TGGwCGAFz4",
+    "description": "A video by Healthy Gamer offering practical steps and mindset shifts to begin the journey of discovering personal purpose.",
+    "audience": ["Adults"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Purpose", "Motivation", "Self-Concept"],
+      "therapyStyle": []
+    },
+    "citation": "Healthy Gamer. (2021, May 27). *How to start to find purpose in your life* [Video]. YouTube. https://www.youtube.com/watch?v=TGGwCGAFz4"
+  },
+  {
+    "title": "Routines for ADHD that Actually Work",
+    "url": "https://www.youtube.com/watch?v=JQFZNQS6eQ0",
+    "description": "A video by Hayley Honeyman providing practical advice on creating and maintaining routines that work with an ADHD brain.",
+    "audience": ["Adults"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["ADHD"],
+      "symptom": ["Executive Dysfunction", "Organization", "Routine"],
+      "therapyStyle": ["Coping Skills"]
+    },
+    "citation": "Honeyman, H. (2021, October 12). *Routines for ADHD that actually work* [Video]. YouTube. https://www.youtube.com/watch?v=JQFZNQS6eQ0"
+  },
+  {
+    "title": "Boundaries Don't Work - Here's Why",
+    "url": "https://youtu.be/gqwjBEf3znc",
+    "description": "A video by Healthy Gamer that explores the underlying reasons why boundaries can be difficult to maintain, especially in certain relationships.",
+    "audience": ["Adults"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Boundaries", "Relationship Issues", "Codependency"],
+      "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Healthy Gamer. (2021, October 21). *Boundaries don't work - here's why* [Video]. YouTube. https://youtu.be/gqwjBEf3znc"
+  },
+  {
+    "title": "Boundaries and Taking Up Space",
+    "url": "https://youtu.be/wjbjX9rPly8",
+    "description": "A video from How to ADHD using the 'balloon' analogy to explain the importance of setting boundaries and advocating for one's needs.",
+    "audience": ["Adults", "Teens"],
+    "format": "Video",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["ADHD"],
+      "symptom": ["Boundaries", "Self-Advocacy", "People-Pleasing"],
+      "therapyStyle": ["Coping Skills"]
+    },
+    "citation": "How to ADHD. (2021, April 1). *Boundaries and taking up space* [Video]. YouTube. https://youtu.be/wjbjX9rPly8"
+  },
+  {
+    "title": "Interactive Values Assessment",
+    "url": "https://www.therapistaid.com/interactive-therapy-tool/values-assessment",
+    "description": "An interactive online tool from Therapist Aid to help individuals identify and clarify their core personal values.",
+    "audience": ["Adults", "Teens"],
+    "format": "Interactive Tool",
+    "language": ["English"],
+    "features": ["Free", "Interactive", "Self-Assessment"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Purpose", "Self-Concept", "Values"],
+      "therapyStyle": ["ACT"]
+    },
+    "citation": "Therapist Aid. (n.d.). *Interactive values assessment*. Retrieved from https://www.therapistaid.com/interactive-therapy-tool/values-assessment"
+  },
+  {
+    "title": "Seattle Area Social & Hobby Groups",
+    "url": "https://docs.google.com/document/d/1tn68AmMGCkBkbcOc_j2hlOzRl6BzWbHg3IjQ6ghVuvc/edit?usp=sharing",
+    "description": "A curated list of links to local groups and activities in the Seattle area, including book clubs, sports leagues, hiking groups, art meetups, and gaming communities.",
+    "audience": ["Adults"],
+    "format": "Resource List",
+    "language": ["English"],
+    "features": ["Free", "Local (Seattle)"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Social Connection", "Hobbies"],
+      "therapyStyle": []
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Seattle area social & hobby groups* [Google Doc]."
+  },
+  {
+    "title": "Feeling the Impact of Self-Criticism",
+    "url": "https://docs.google.com/document/d/10TlTSHGsDQNd3SMryyxFQAupGgL81g8a/edit?usp=sharing",
+    "description": "A worksheet to help clients recognize their own critical voice and feel its emotional impact, building self-awareness and motivation for change.",
+    "audience": ["Adults", "Teens"],
+    "format": "Worksheet (Google Doc)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+      "diagnosis": ["Depression"],
+      "symptom": ["Self-Criticism", "Shame", "Negative Thoughts"],
+      "therapyStyle": ["Self-Compassion", "CBT"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Feeling the impact of self-criticism* [Google Doc]."
+  },
+  {
+    "title": "Shame Psychoeducation Handout",
+    "url": "https://docs.google.com/document/d/122T1j9upj46Svj1haW5o62HtYGmrxWf5/edit?usp=sharing",
+    "description": "A handout explaining what shame is, its purpose, and how it affects thoughts, the body, and relationships. Designed for clients experiencing high shame.",
+    "audience": ["Adults", "Teens", "Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Shame", "Self-Criticism", "Vulnerability"],
+      "therapyStyle": ["Psychoeducation", "Self-Compassion"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Shame psychoeducation handout* [Google Doc]."
+  },
+  {
+    "title": "WALKS the TALK: A Skill for Receiving Feedback",
+    "url": "https://docs.google.com/document/d/1khKoAtPC7bkyVrYdWOZUQvw-Gk-PMAXn/edit?usp=sharing",
+    "description": "A worksheet outlining the WALKS the TALK practice to help individuals, especially those who are self-critical, respond to feedback more effectively.",
+    "audience": ["Adults"],
+    "format": "Worksheet (Google Doc)",
+    "language": ["English"],
+    "features": ["Free", "Printable", "Interactive"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Shame", "Self-Criticism", "Relationship Issues", "Workplace Stress"],
+      "therapyStyle": ["Coping Skills", "Interpersonal"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *WALKS the TALK: A skill for receiving feedback* [Google Doc]."
+  },
+  {
+    "title": "How to Use Theories in Clinical Practice",
+    "url": "https://docs.google.com/document/d/1LHtycf57CMzOb0NooR47FEM6X9QqOePO/edit?usp=sharing",
+    "description": "A guide for clinicians on the practical application of therapeutic theories, including case conceptualization, intervention selection, and fostering the therapeutic relationship.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": [],
+      "therapyStyle": ["Case Conceptualization", "Intervention"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *How to use theories in clinical practice* [Google Doc]."
+  },
+  {
+    "title": "Art Therapy Theory",
+    "url": "https://docs.google.com/document/d/1uaNeb4bijf5s9SNUyhOFcG5mRTi7gfIf/edit?usp=sharing",
+    "description": "An overview of Art Therapy, detailing its history, key principles, how it works, and its applications for various populations and mental health conditions.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": [],
+      "therapyStyle": ["Art Therapy"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Art therapy theory* [Google Doc]."
+  },
+  {
+    "title": "Existential Therapy Overview",
+    "url": "https://drive.google.com/file/d/1foGtA2Gkp8TD8rFfmAOC0DjpE-IHCtEX/view?usp=sharing",
+    "description": "A handout from Therapist Aid explaining the core concepts of Existential Therapy, including the search for meaning, self-awareness, and facing existential anxieties.",
+    "audience": ["Clinicians", "Adults"],
+    "format": "Worksheet (PDF)",
+    "language": ["English"],
+    "features": ["Free", "Printable"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Purpose", "Existential Dread", "Anxiety"],
+      "therapyStyle": ["Existential"]
+    },
+    "citation": "Therapist Aid. (n.d.). *Existential therapy* [PDF]. Retrieved from Therapist Aid."
+  },
+  {
+    "title": "Internal Family Systems (IFS) Overview",
+    "url": "https://docs.google.com/document/d/18infbroNGeFqIbAlQoySKQK2HOo5AVt8/edit?usp=sharing",
+    "description": "A comprehensive guide to the Internal Family Systems model, detailing the concepts of Self, Exiles, Managers, and Firefighters.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Self-Concept", "Inner Critic"],
+      "therapyStyle": ["IFS"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Internal Family Systems (IFS) overview* [Google Doc]."
+  },
+  {
+    "title": "Introduction to Polyvagal Theory",
+    "url": "https://docs.google.com/document/d/15kzBQGXv28sYmpl7iYyA2HtAPny8esFl/edit?usp=sharing",
+    "description": "An introductory guide to Polyvagal Theory, explaining the roles of the ventral vagal, sympathetic, and dorsal vagal systems in emotional and physiological states.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Anxiety", "Trauma", "Emotional Dysregulation"],
+      "therapyStyle": ["Polyvagal Theory", "Somatic"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Introduction to Polyvagal Theory* [Google Doc]."
+  },
+  {
+    "title": "The Four Stages of Competence",
+    "url": "https://docs.google.com/document/d/1pFI4-JeQvx_ztECcfgjyxZ3F-RgBxK73/edit?usp=sharing",
+    "description": "A handout explaining the four stages of learning a new skill: Unconscious Incompetence, Conscious Incompetence, Conscious Competence, and Unconscious Competence.",
+    "audience": ["Clinicians", "Adults"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Learning", "Skill Development"],
+      "therapyStyle": ["Psychoeducation"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *The four stages of competence* [Google Doc]."
+  },
+  {
+    "title": "Relational Cultural Theory (RCT) Overview",
+    "url": "https://docs.google.com/document/d/11V1FxW6lnFmSJQjLPcBhUd-FGXoq79YS/edit?usp=sharing",
+    "description": "An introduction to Relational Cultural Theory, which posits that human connection and relational growth are central to psychological well-being.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Relationship Issues", "Social Connection"],
+      "therapyStyle": ["Relational Cultural Theory", "Feminist"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Relational Cultural Theory (RCT) overview* [Google Doc]."
+  },
+  {
+    "title": "Solution-Focused Brief Therapy (SFBT) Guide",
+    "url": "https://docs.google.com/presentation/d/1P47CoeIjYb3EEvelAFJkKa00MSmRZIVA/edit?usp=sharing",
+    "description": "A presentation outlining the principles and techniques of Solution-Focused Brief Therapy, including the 'Miracle Question' and focusing on client strengths.",
+    "audience": ["Clinicians"],
+    "format": "Presentation",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": [],
+      "therapyStyle": ["SFBT"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Solution-Focused Brief Therapy (SFBT) guide* [Google Slides]."
+  },
+  {
+    "title": "Somatic Experiencing Overview",
+    "url": "https://docs.google.com/document/d/12Qxk9G6arLnq3oEx-J7aNjyoh95MwwrT/edit?usp=sharing",
+    "description": "A guide to Somatic Experiencing, a body-focused therapy aimed at relieving the symptoms of trauma and stress by focusing on the client's perceived body sensations.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": ["PTSD"],
+      "symptom": ["Trauma", "Anxiety", "Stress"],
+      "therapyStyle": ["Somatic Experiencing", "Somatic"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Somatic Experiencing overview* [Google Doc]."
+  },
+  {
+    "title": "Structural Family Therapy Overview",
+    "url": "https://docs.google.com/document/d/1DP08Xlshg7F6Ow75W701sAyn8TVuOeMy/edit?usp=sharing",
+    "description": "An introduction to Structural Family Therapy, focusing on family structures, subsystems, and boundaries as a way to resolve problems.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Family Conflict", "Relationship Issues"],
+      "therapyStyle": ["Structural Family Therapy", "Family Systems"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Structural Family Therapy overview* [Google Doc]."
+  },
+  {
+    "title": "Transpersonal Therapy Overview",
+    "url": "https://docs.google.com/document/d/1rnySYbrMr1bJRX3wN8zhKID5Gbc4lkaZ/edit?usp=sharing",
+    "description": "A guide to Transpersonal Therapy, which integrates the spiritual, social, emotional, and physical aspects of the human experience.",
+    "audience": ["Clinicians"],
+    "format": "Article (Google Doc)",
+    "language": ["English"],
+    "features": ["Free"],
+    "topics": {
+      "diagnosis": [],
+      "symptom": ["Spirituality", "Purpose"],
+      "therapyStyle": ["Transpersonal"]
+    },
+    "citation": "Therapist Toolkit. (n.d.). *Transpersonal Therapy overview* [Google Doc]."
+  }
+]

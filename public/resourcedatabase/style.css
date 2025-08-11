@@ -1,0 +1,189 @@
+/* Search and Sort Bar */
+.search-input, .sort-select {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #1e293b; /* slate-800 */
+    border: 1px solid #475569; /* slate-600 */
+    color: #e0f2fe; /* sky-100 */
+}
+.search-input::placeholder { color: #94a3b8; /* slate-400 */ }
+@media (min-width: 768px) {
+    .search-input, .sort-select { width: auto; }
+}
+
+/* Active Filters Display */
+.active-filter-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #38bdf8; /* sky-400 */
+    color: #0c4a6e; /* sky-950 */
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.remove-filter-btn {
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    color: #0c4a6e;
+    cursor: pointer;
+    font-weight: bold;
+}
+.clear-all-btn {
+    background: none;
+    border: 1px solid #475569;
+    color: #94a3b8;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Main Filter Panel */
+.filter-group {
+    background-color: #1e293b;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #334155;
+}
+.filter-group legend {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #bae6fd; /* sky-200 */
+    padding: 0 0.5rem;
+}
+.filter-options {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 0.75rem;
+    padding-right: 0.5rem;
+}
+.filter-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #cbd5e1; /* slate-300 */
+}
+.filter-option input { position: absolute; opacity: 0; cursor: pointer; }
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #334155;
+    border: 1px solid #475569;
+    border-radius: 0.25rem;
+}
+.filter-option:hover input ~ .checkmark { background-color: #475569; }
+.filter-option input:checked ~ .checkmark { background-color: #38bdf8; }
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 0.45rem;
+    top: 0.25rem;
+    width: 0.4rem;
+    height: 0.7rem;
+    border: solid #0c4a6e;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.filter-option input:checked ~ .checkmark:after { display: block; }
+.filter-count { font-size: 0.8rem; color: #94a3b8; }
+
+/* Resource Grid and Card Styling */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+.resource-card {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #334155;
+}
+.resource-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+.resource-card .card-header h3 { font-size: 1.125rem; font-weight: 600; color: #bae6fd; }
+.resource-card .card-header a { text-decoration: none; color: inherit; }
+.resource-card .card-header a:hover { text-decoration: underline; }
+.resource-card .resource-type {
+    background-color: #334155;
+    color: #e0f2fe;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+.resource-card p { color: #cbd5e1; font-size: 0.9rem; flex-grow: 1; line-height: 1.6; }
+.resource-card .tags { margin-top: 1rem; }
+.resource-card .tag {
+    display: inline-block;
+    background-color: #334155;
+    color: #bae6fd;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Styling for the new Citation Section */
+.citation-section {
+    margin-top: 1rem;
+    border-top: 1px solid #334155; /* slate-700 */
+    padding-top: 1rem;
+}
+
+.citation-section summary {
+    font-weight: 500;
+    color: #94a3b8; /* slate-400 */
+    cursor: pointer;
+    list-style: none; /* Removes the default triangle */
+}
+
+.citation-section summary::-webkit-details-marker {
+    display: none; /* Also removes the default triangle */
+}
+
+.citation-section summary::before {
+    content: '►'; /* Add a custom triangle */
+    margin-right: 0.5rem;
+    font-size: 0.8em;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.citation-section details[open] > summary::before {
+    transform: rotate(90deg); /* Rotate triangle when open */
+}
+
+.citation-section p {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #94a3b8; /* slate-400 */
+    background-color: #1e293b; /* slate-800 */
+    border-left: 3px solid #38bdf8; /* sky-400 */
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    white-space: pre-wrap; /* Preserves formatting */
+    word-wrap: break-word;
+}

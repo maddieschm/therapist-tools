@@ -74,12 +74,13 @@ export default function Home() {
   const dayToDayTools = {
     available: [
       { title: "Letter Generator", description: "Provides fillable templates for various professional letters such as Emotional Support Animal, Academic Accommodation, and Referral Letters.", link: "/lettergenerator/index.html" },
-      { title: "Note Generator", description: "Offers fillable templates for various individual session note formats including general progress note, DAP, SOAP, and BIRP.", link: "/notegenerator/index.html" }
+      { title: "Note Generator", description: "Offers fillable templates for various individual session note formats including general progress note, DAP, SOAP, and BIRP.", link: "/notegenerator/index.html" },
+      { title: "Resource Database", description: "A pre-populated, static database of resources categorized by diagnosis, symptom, and treatment.", link: "/resourcedatabase/index.html" }
     ],
     comingSoon: [
+      { title: "Referral Database", description: "A tool to find and manage professional referrals for your clients." },
       { title: "Self-Care Dashboard", description: "Interactive tools for tracking self-care aspects like wellness check-ins and social connections." },
       { title: "Intake Note + Packet Generator", description: "A dynamic tool to generate a full intake packet including Informed Consent, HIPAA notices, and practice policies." },
-      { title: "Resource & Referral Database", description: "A pre-populated, static database of resources categorized by diagnosis, symptom, and treatment." },
       { title: "Client Diagnosis (Cx Dx) Pie Chart Generator", description: "A client-side tool to generate a visual pie chart representation of the prevalence of different diagnoses in your practice." },
       { title: "Treatment Plan Builder", description: "Generate treatment plan objectives and interventions based on diagnosis, theory, or symptoms. Includes a tool to assist in generating SMART goals." },
       { title: "Assessment Database", description: "A static database of evidence-based assessments, categorized by diagnosis and symptom." },
